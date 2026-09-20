@@ -1565,10 +1565,13 @@ body {
    ================================================================ */
 
 #screen-onboarding {
-  display: flex;
   align-items: flex-start;
   justify-content: center;
   padding: 40px 20px 60px;
+}
+
+#screen-onboarding.active {
+  display: flex;
 }
 
 .onboarding-card {
