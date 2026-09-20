@@ -44,8 +44,10 @@ graph TD
 - **Features**:
   - Name / Email capture with "Stay anonymous" option on welcome screen.
   - Interactive 6 Archetypes animated showcase spectrum on home screen with staggered floating keyframes and calibrated hover glows.
-  - 18 sequential question cards with second-person "You..." voice and multi-selection (1 to 3 actions) with live counter badge.
+  - 18 sequential question cards with 100% everyday social scenarios (friends, dinners, parties, road trips, bill splitting).
+  - Short, punchy 8-15 word conversational "You..." options with multi-selection (1 to 3 actions) and live counter badge.
   - Mathematical vector averaging across multiple selected actions per scenario for smooth hybrid profile calculation.
+  - Auto-scroll to top on every scenario navigation.
   - Keyboard shortcuts (A–F toggle options, Enter ↵ advances to next scenario).
   - "What Your Result Implies" breakdown (How You Influence, Where You Thrive, Hybrid Dynamic).
   - 1-10 Accuracy slider logging directly to Google Sheets column `Accuracy Rating (1-10)`.

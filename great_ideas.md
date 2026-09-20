@@ -43,4 +43,9 @@ This file records key ideas and strategic directions provided for the Charisma p
   - Second-person 'You...' phrasing prompts immediate visceral self-projection and authentic gut-level responses, eliminating clinical 3rd-person detachment.
   - Constrained multi-select (1 to 3 actions with live counter and graceful limit dampening) prevents acquiescence bias and produces rich, continuous mathematical trait vectors.
 
+- **100% Everyday Social & Friendship Focus with Punchy Low-Cognitive-Load Copy**:
+  - Replaced all corporate/office scenarios (meetings, executive reviews, project timelines, IT outages) with authentic everyday social situations: friend groups, dinners, house parties, road trips, bill splitting, late-night invites, and boundaries.
+  - Options radically shortened to punchy 8–15 word conversational actions, removing academic and clinical jargon so the assessment is fast, intuitive, and universally relatable.
+
+
 

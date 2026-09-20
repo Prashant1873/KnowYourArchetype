@@ -9,11 +9,11 @@ window.QUESTIONNAIRE_DATA = {
       "questions": [
         {
           "id": "Q01",
-          "scenario": "A group of six friends sits at a restaurant. Nobody can agree on what to share or order, and the waiter is hovering awkwardly.",
+          "scenario": "A group of friends at dinner can't decide what to order, and the server is hovering awkwardly.",
           "options": [
             {
               "letter": "A",
-              "text": "You warmly ask each person what flavors they crave, offer to split your own plate with anyone unsure, and give the server a reassuring smile to dissolve the tension.",
+              "text": "You ask what everyone feels like eating and offer to share your dish.",
               "archetype": "dolphin",
               "trait_impact": {
                 "energy_presence": 0.5,
@@ -24,7 +24,7 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "B",
-              "text": "You quip with a witty remark about starving to death, negotiate a quick clever compromise ('two spicy, two mild, split the bill evenly'), and wink at the server.",
+              "text": "You joke about starving and suggest an easy compromise everyone likes.",
               "archetype": "fox",
               "trait_impact": {
                 "energy_presence": 0.6,
@@ -35,7 +35,7 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "C",
-              "text": "You take the menu, look around the table with steady eye contact, and state: 'We're getting the house sampler, two chef specials, and sparkling water. Any severe allergies speak now.' You hand the menu to the server.",
+              "text": "You grab the menu and order a few popular dishes for the whole table.",
               "archetype": "lion",
               "trait_impact": {
                 "energy_presence": -0.7,
@@ -46,7 +46,7 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "D",
-              "text": "You quietly calculate the portion-to-price ratio on the menu, point out that the pre-set combo saves 30% per person, and ask the server two precise questions about preparation times.",
+              "text": "You quickly check the prices and point out the combo deal that saves money.",
               "archetype": "owl",
               "trait_impact": {
                 "energy_presence": -0.8,
@@ -57,7 +57,7 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "E",
-              "text": "You gasp enthusiastically at the artisan drinks and dessert list, share an animated story about the last time you were here, and rally the table to order the most exciting dishes.",
+              "text": "You hype up the most exciting dishes and convince everyone to try something fun.",
               "archetype": "peacock",
               "trait_impact": {
                 "energy_presence": 0.9,
@@ -68,7 +68,7 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "F",
-              "text": "You lean back with relaxed shoulders, completely unbothered by the delay, and calmly tell the table: 'Take your time, no rush at all. We are here to enjoy each other.'",
+              "text": "You lean back and tell everyone to take their time—there's no rush.",
               "archetype": "bear_wolf",
               "trait_impact": {
                 "energy_presence": -0.8,
@@ -81,11 +81,11 @@ window.QUESTIONNAIRE_DATA = {
         },
         {
           "id": "Q02",
-          "scenario": "You arrive at a crowded party or mixer where you only know the host, who is currently tied up talking to someone across the room.",
+          "scenario": "You walk into a house party where you only know the host, who is busy talking across the room.",
           "options": [
             {
               "letter": "A",
-              "text": "You notice someone standing by themselves near the refreshments, walk over with an open smile, and warmly introduce yourself so neither of you is alone.",
+              "text": "You spot someone standing alone by the drinks and walk over to say hi.",
               "archetype": "dolphin",
               "trait_impact": {
                 "energy_presence": 0.5,
@@ -96,29 +96,29 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "B",
-              "text": "You drift around the perimeter with an observant smirk, read the vibe of various circles, and effortlessly drop a clever, funny remark into an ongoing conversation to break in.",
+              "text": "You join a nearby group by dropping a funny comment into their conversation.",
               "archetype": "fox",
               "trait_impact": {
                 "energy_presence": 0.6,
-                "warmth_vs_authority": 0.1,
-                "conflict_assertiveness": 0.2,
+                "warmth_vs_authority": 0.2,
+                "conflict_assertiveness": 0.4,
                 "conflict_cooperativeness": -0.3
               }
             },
             {
               "letter": "C",
-              "text": "You walk in with an upright, expansive posture and steady gaze, scan the room deliberately without checking your phone, step up to the bar, and comfortably own the central space.",
+              "text": "You walk in with calm confidence, grab a drink, and easily hold your ground.",
               "archetype": "lion",
               "trait_impact": {
                 "energy_presence": -0.7,
                 "warmth_vs_authority": -0.8,
-                "conflict_assertiveness": 0.9,
+                "conflict_assertiveness": 0.8,
                 "conflict_cooperativeness": -0.4
               }
             },
             {
               "letter": "D",
-              "text": "You assess the room layout, acoustics, and crowd density; you find a calm corner or interesting spot (like an art display or bookshelf) to observe social dynamics before engaging.",
+              "text": "You find a quiet spot to watch the room's energy before jumping in.",
               "archetype": "owl",
               "trait_impact": {
                 "energy_presence": -0.8,
@@ -129,23 +129,23 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "E",
-              "text": "You enter with radiant, animated energy, offer an expressive compliment to the first person you make eye contact with, and immediately start mingling with high excitement.",
+              "text": "You walk in with high energy, compliment someone's outfit, and start mingling.",
               "archetype": "peacock",
               "trait_impact": {
                 "energy_presence": 0.9,
-                "warmth_vs_authority": 0.8,
-                "conflict_assertiveness": 0.4,
-                "conflict_cooperativeness": 0.7
+                "warmth_vs_authority": 0.7,
+                "conflict_assertiveness": 0.5,
+                "conflict_cooperativeness": 0.5
               }
             },
             {
               "letter": "F",
-              "text": "You find a solid, comfortable seating spot, settle in with steady unhurried breathing, and let conversations naturally gravitate toward your calm, grounded presence.",
+              "text": "You find a comfortable couch, relax, and let conversations come to you naturally.",
               "archetype": "bear_wolf",
               "trait_impact": {
-                "energy_presence": -0.8,
+                "energy_presence": -0.7,
                 "warmth_vs_authority": 0.2,
-                "conflict_assertiveness": -0.1,
+                "conflict_assertiveness": 0.1,
                 "conflict_cooperativeness": 0.8
               }
             }
@@ -153,11 +153,11 @@ window.QUESTIONNAIRE_DATA = {
         },
         {
           "id": "Q03",
-          "scenario": "A close friend is venting for the fifth time this week about the exact same minor coworker issue that has a simple solution.",
+          "scenario": "A close friend vents to you for the fifth time about the exact same small frustration.",
           "options": [
             {
               "letter": "A",
-              "text": "You tilt your head with deep empathy, gently touch their arm, and validate their emotional distress: 'I hear you, it is so exhausting carrying that tension every day.'",
+              "text": "You listen warmly and tell them you understand how draining it feels.",
               "archetype": "dolphin",
               "trait_impact": {
                 "energy_presence": 0.4,
@@ -168,104 +168,32 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "B",
-              "text": "You smirk playfully and highlight the coworker's absurdity with biting wit: 'You should buy them an employee-of-the-month mug just to completely baffle their ego.'",
+              "text": "You make them laugh by pointing out how ridiculous the whole thing is.",
               "archetype": "fox",
               "trait_impact": {
-                "energy_presence": 0.6,
-                "warmth_vs_authority": 0.1,
+                "energy_presence": 0.5,
+                "warmth_vs_authority": 0.2,
                 "conflict_assertiveness": 0.3,
                 "conflict_cooperativeness": -0.2
               }
             },
             {
               "letter": "C",
-              "text": "You listen for 60 seconds, then cut in with calm downward inflection: 'You have two choices: tell them directly to stop at 9 AM, or drop it. Ruminating isn't changing anything.'",
+              "text": "You gently cut in and tell them straight: fix it today or stop worrying.",
               "archetype": "lion",
               "trait_impact": {
-                "energy_presence": -0.7,
-                "warmth_vs_authority": -0.9,
+                "energy_presence": -0.6,
+                "warmth_vs_authority": -0.8,
                 "conflict_assertiveness": 0.9,
                 "conflict_cooperativeness": -0.5
               }
             },
             {
               "letter": "D",
-              "text": "You ask Socratic questions to deconstruct the logic: 'What specific policy did they violate? What objective evidence do you have if this goes to leadership?'",
+              "text": "You ask simple questions to help them look at the problem objectively.",
               "archetype": "owl",
-              "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": -0.6,
-                "conflict_assertiveness": 0.2,
-                "conflict_cooperativeness": 0.4
-              }
-            },
-            {
-              "letter": "E",
-              "text": "You gasp dramatically: 'No they did NOT! Tell me every single detail! Let's roleplay what you're going to say back to shut them down completely!'",
-              "archetype": "peacock",
-              "trait_impact": {
-                "energy_presence": 0.9,
-                "warmth_vs_authority": 0.7,
-                "conflict_assertiveness": 0.5,
-                "conflict_cooperativeness": 0.6
-              }
-            },
-            {
-              "letter": "F",
-              "text": "You listen patiently in total stillness, offering no unsolicited advice or judgment, simply holding an unshakeable, steady emotional space until your friend winds down.",
-              "archetype": "bear_wolf",
-              "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": 0.3,
-                "conflict_assertiveness": -0.2,
-                "conflict_cooperativeness": 0.9
-              }
-            }
-          ]
-        },
-        {
-          "id": "Q04",
-          "scenario": "You are standing in an unusually slow coffee line next to an acquaintance during a quiet morning rush.",
-          "options": [
-            {
-              "letter": "A",
-              "text": "You smile warmly, ask how their week is feeling, and offer sincere words of encouragement to brighten their morning.",
-              "archetype": "dolphin",
-              "trait_impact": {
-                "energy_presence": 0.5,
-                "warmth_vs_authority": 0.9,
-                "conflict_assertiveness": -0.5,
-                "conflict_cooperativeness": 0.9
-              }
-            },
-            {
-              "letter": "B",
-              "text": "You notice an absurdly pretentious seasonal drink on the chalkboard menu and make a dry, hilarious observation that makes the acquaintance chuckle.",
-              "archetype": "fox",
-              "trait_impact": {
-                "energy_presence": 0.6,
-                "warmth_vs_authority": 0.1,
-                "conflict_assertiveness": 0.2,
-                "conflict_cooperativeness": -0.2
-              }
-            },
-            {
-              "letter": "C",
-              "text": "You give a crisp, polite head nod and stand in complete physical stillness without checking your watch, perfectly comfortable holding silent presence.",
-              "archetype": "lion",
               "trait_impact": {
                 "energy_presence": -0.7,
-                "warmth_vs_authority": -0.8,
-                "conflict_assertiveness": 0.7,
-                "conflict_cooperativeness": -0.3
-              }
-            },
-            {
-              "letter": "D",
-              "text": "You observe the barista's workflow bottleneck, calculate the order throughput rate, and share a quick, interesting thought on optimization if spoken to.",
-              "archetype": "owl",
-              "trait_impact": {
-                "energy_presence": -0.8,
                 "warmth_vs_authority": -0.6,
                 "conflict_assertiveness": 0.1,
                 "conflict_cooperativeness": 0.3
@@ -273,93 +201,165 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "E",
-              "text": "You strike up a lively conversation about your favorite roast or an exciting breakfast recipe, spreading infectious morning energy to the line.",
+              "text": "You gas them up with dramatic sympathy and help them vent it all out.",
               "archetype": "peacock",
               "trait_impact": {
-                "energy_presence": 0.9,
-                "warmth_vs_authority": 0.8,
+                "energy_presence": 0.8,
+                "warmth_vs_authority": 0.7,
                 "conflict_assertiveness": 0.3,
-                "conflict_cooperativeness": 0.7
+                "conflict_cooperativeness": 0.6
               }
             },
             {
               "letter": "F",
-              "text": "You stand with grounded posture and slow breathing, radiate calm patient energy, and offer a quiet, friendly nod that makes the wait feel peaceful.",
+              "text": "You stay quiet, listen patiently, and just let them talk until they feel calm.",
               "archetype": "bear_wolf",
               "trait_impact": {
                 "energy_presence": -0.8,
-                "warmth_vs_authority": 0.2,
-                "conflict_assertiveness": -0.1,
+                "warmth_vs_authority": 0.3,
+                "conflict_assertiveness": 0.0,
                 "conflict_cooperativeness": 0.8
               }
             }
           ]
         },
         {
-          "id": "Q05",
-          "scenario": "A group vacation chat has been debating destinations for three weeks with zero consensus or booking action.",
+          "id": "Q04",
+          "scenario": "You run into an acquaintance while waiting in a slow coffee shop line.",
           "options": [
             {
               "letter": "A",
-              "text": "You post in the chat: 'As long as we're all together laughing and recharging, any spot is perfect! Let's make sure the dates work for Maya since she has work constraints.'",
+              "text": "You smile and ask how their week is going with genuine warmth.",
               "archetype": "dolphin",
               "trait_impact": {
+                "energy_presence": 0.4,
+                "warmth_vs_authority": 0.8,
+                "conflict_assertiveness": -0.5,
+                "conflict_cooperativeness": 0.8
+              }
+            },
+            {
+              "letter": "B",
+              "text": "You make a funny joke about how slow the line is moving.",
+              "archetype": "fox",
+              "trait_impact": {
                 "energy_presence": 0.5,
+                "warmth_vs_authority": 0.1,
+                "conflict_assertiveness": 0.2,
+                "conflict_cooperativeness": -0.2
+              }
+            },
+            {
+              "letter": "C",
+              "text": "You give a polite nod and comfortably wait in relaxed silence.",
+              "archetype": "lion",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.7,
+                "conflict_assertiveness": 0.7,
+                "conflict_cooperativeness": -0.4
+              }
+            },
+            {
+              "letter": "D",
+              "text": "You casually point out why the ordering workflow is taking longer.",
+              "archetype": "owl",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.6,
+                "conflict_assertiveness": 0.1,
+                "conflict_cooperativeness": 0.2
+              }
+            },
+            {
+              "letter": "E",
+              "text": "You start an upbeat chat about your weekend plans with fun energy.",
+              "archetype": "peacock",
+              "trait_impact": {
+                "energy_presence": 0.8,
+                "warmth_vs_authority": 0.6,
+                "conflict_assertiveness": 0.3,
+                "conflict_cooperativeness": 0.5
+              }
+            },
+            {
+              "letter": "F",
+              "text": "You share a calm, friendly nod and enjoy the peaceful wait together.",
+              "archetype": "bear_wolf",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": 0.3,
+                "conflict_assertiveness": 0.0,
+                "conflict_cooperativeness": 0.7
+              }
+            }
+          ]
+        },
+        {
+          "id": "Q05",
+          "scenario": "A group chat is stuck arguing for weeks about where to go for a weekend trip.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "You text: 'Any place is great as long as we're all together having fun!'",
+              "archetype": "dolphin",
+              "trait_impact": {
+                "energy_presence": 0.4,
                 "warmth_vs_authority": 0.9,
-                "conflict_assertiveness": -0.7,
+                "conflict_assertiveness": -0.6,
                 "conflict_cooperativeness": 0.9
               }
             },
             {
               "letter": "B",
-              "text": "You find an unconventional, quirky lakehouse rental off the beaten path and pitch it with charm: 'Skip the generic tourist trap; this has a private dock and costs half as much.'",
+              "text": "You find a quirky cabin with a pool and pitch it as a total steal.",
               "archetype": "fox",
               "trait_impact": {
-                "energy_presence": 0.6,
-                "warmth_vs_authority": 0.1,
+                "energy_presence": 0.5,
+                "warmth_vs_authority": 0.2,
                 "conflict_assertiveness": 0.3,
                 "conflict_cooperativeness": -0.3
               }
             },
             {
               "letter": "C",
-              "text": "You post in the chat: 'We are locking this down. Destination A, departing on the 12th. Here is the reservation link. Confirm and pay your share by 6 PM today or you are booking separately.'",
+              "text": "You pick one spot, share the booking link, and set a hard deadline to join.",
               "archetype": "lion",
               "trait_impact": {
                 "energy_presence": -0.7,
-                "warmth_vs_authority": -0.9,
+                "warmth_vs_authority": -0.8,
                 "conflict_assertiveness": 0.9,
                 "conflict_cooperativeness": -0.5
               }
             },
             {
               "letter": "D",
-              "text": "You build and share a side-by-side spreadsheet scoring flight costs, transit times, weather averages, and cancellation policies to make the optimal pick obvious.",
+              "text": "You compare drive times and costs in a quick list so the pick is obvious.",
               "archetype": "owl",
               "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": -0.7,
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.6,
                 "conflict_assertiveness": 0.2,
-                "conflict_cooperativeness": 0.4
+                "conflict_cooperativeness": 0.3
               }
             },
             {
               "letter": "E",
-              "text": "You flood the chat with stunning travel photos, rooftop sunset vibes, and excitement: 'Guys, imagine the photos and memories! We HAVE to book this now!'",
+              "text": "You drop gorgeous photos into the chat and hype everyone up to book today.",
               "archetype": "peacock",
               "trait_impact": {
                 "energy_presence": 0.9,
-                "warmth_vs_authority": 0.8,
+                "warmth_vs_authority": 0.7,
                 "conflict_assertiveness": 0.4,
-                "conflict_cooperativeness": 0.6
+                "conflict_cooperativeness": 0.5
               }
             },
             {
               "letter": "F",
-              "text": "You wait until the debate exhausts itself, then calmly text: 'I've got the camping gear and van ready if anyone wants a quiet, simple retreat. Let me know when you decide.'",
+              "text": "You offer to bring camping gear and say you're ready whenever they decide.",
               "archetype": "bear_wolf",
               "trait_impact": {
-                "energy_presence": -0.8,
+                "energy_presence": -0.7,
                 "warmth_vs_authority": 0.2,
                 "conflict_assertiveness": 0.0,
                 "conflict_cooperativeness": 0.8
@@ -369,72 +369,72 @@ window.QUESTIONNAIRE_DATA = {
         },
         {
           "id": "Q06",
-          "scenario": "You are having a peaceful evening at home when an acquaintance invites you to an impromptu gathering starting in 30 minutes.",
+          "scenario": "You are having a relaxing evening at home when friends invite you out with 30 minutes' notice.",
           "options": [
             {
               "letter": "A",
-              "text": "You worry that declining might make them feel unsupported or unappreciated, so you quickly get ready with a warm attitude to show up for them.",
+              "text": "You worry about letting them down, so you quickly get ready and go.",
               "archetype": "dolphin",
               "trait_impact": {
-                "energy_presence": 0.5,
-                "warmth_vs_authority": 0.9,
-                "conflict_assertiveness": -0.6,
-                "conflict_cooperativeness": 0.9
+                "energy_presence": 0.4,
+                "warmth_vs_authority": 0.8,
+                "conflict_assertiveness": -0.5,
+                "conflict_cooperativeness": 0.8
               }
             },
             {
               "letter": "B",
-              "text": "You weigh the social opportunity: you ask who is attending and what the scene is, then decide based on whether it offers interesting conversations or tactical networking.",
+              "text": "You ask who's going to see if it's worth putting pants on for.",
               "archetype": "fox",
               "trait_impact": {
-                "energy_presence": 0.6,
-                "warmth_vs_authority": 0.0,
+                "energy_presence": 0.4,
+                "warmth_vs_authority": 0.1,
                 "conflict_assertiveness": 0.3,
-                "conflict_cooperativeness": -0.3
+                "conflict_cooperativeness": -0.2
               }
             },
             {
               "letter": "C",
-              "text": "You make a decisive call in 5 seconds without guilt: 'Not tonight, I'm off the clock. Have a great time,' and put your phone away.",
+              "text": "You quickly text: 'Not tonight, I'm staying in. Have fun!' with zero guilt.",
               "archetype": "lion",
               "trait_impact": {
                 "energy_presence": -0.7,
                 "warmth_vs_authority": -0.8,
-                "conflict_assertiveness": 0.9,
+                "conflict_assertiveness": 0.8,
                 "conflict_cooperativeness": -0.5
               }
             },
             {
               "letter": "D",
-              "text": "You evaluate your sleep schedule and tomorrow's mental demands, sending a concise text politely declining unless there is a specific, intellectually compelling discussion promised.",
+              "text": "You consider your morning plans and politely pass to protect your sleep.",
               "archetype": "owl",
               "trait_impact": {
                 "energy_presence": -0.8,
-                "warmth_vs_authority": -0.6,
+                "warmth_vs_authority": -0.7,
                 "conflict_assertiveness": 0.2,
                 "conflict_cooperativeness": 0.2
               }
             },
             {
               "letter": "E",
-              "text": "You instantly catch a burst of spontaneous energy: 'Say no more! Let me get my favorite outfit on!' and arrive ready to elevate the gathering.",
+              "text": "You get an immediate burst of excitement, throw on a great outfit, and head out.",
               "archetype": "peacock",
               "trait_impact": {
                 "energy_presence": 0.9,
-                "warmth_vs_authority": 0.8,
+                "warmth_vs_authority": 0.6,
                 "conflict_assertiveness": 0.3,
-                "conflict_cooperativeness": 0.7
+                "conflict_cooperativeness": 0.5
               }
             },
             {
               "letter": "F",
-              "text": "Firmly rooted in your personal evening sanctuary, you reply with relaxed warmth: 'Thanks for thinking of me, but I am settled in for the night. Catch you soon.'",
+              "text": "You smile and text: 'I'm cozy on the couch tonight, catch you next time!'",
               "archetype": "bear_wolf",
               "trait_impact": {
                 "energy_presence": -0.8,
-                "warmth_vs_authority": 0.3,
-                "conflict_assertiveness": 0.1,
-                "conflict_cooperativeness": 0.8
+                "warmth_vs_authority": 0.2,
+                "conflict_assertiveness": 0.0,
+                "conflict_cooperativeness": 0.7
               }
             }
           ]
@@ -442,16 +442,16 @@ window.QUESTIONNAIRE_DATA = {
       ]
     },
     {
-      "category": "workplace_and_teams",
-      "category_title": "Workplace & Team Dynamics Scenarios",
+      "category": "group_outings_and_dynamics",
+      "category_title": "Group Outings & Everyday Social Dynamics",
       "questions": [
         {
           "id": "Q07",
-          "scenario": "A 30-minute team meeting is completely derailed because two colleagues are aggressively arguing over a minor formatting issue.",
+          "scenario": "Two friends in your group start arguing heatedly over how to split a shared restaurant bill.",
           "options": [
             {
               "letter": "A",
-              "text": "You step in gently with open palms, validate both viewpoints, and suggest: 'You both care so much about quality. Let's see if we can combine the best parts of both so everyone feels good.'",
+              "text": "You step in gently, validate both sides, and offer to cover the difference.",
               "archetype": "dolphin",
               "trait_impact": {
                 "energy_presence": 0.4,
@@ -462,51 +462,51 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "B",
-              "text": "You quip with observational wit: 'If we spend another ten minutes on font choices, we'll need to bill hazard pay.' You propose a clever compromise that bypasses the debate.",
+              "text": "You make a witty joke about the math and round the bill into an easy split.",
               "archetype": "fox",
               "trait_impact": {
-                "energy_presence": 0.6,
-                "warmth_vs_authority": 0.1,
+                "energy_presence": 0.5,
+                "warmth_vs_authority": 0.2,
                 "conflict_assertiveness": 0.3,
                 "conflict_cooperativeness": -0.2
               }
             },
             {
               "letter": "C",
-              "text": "You clear your throat, maintain physical stillness, and speak with downward inflection: 'Pause. We have ten minutes left and two key deliverables unreviewed. Table this debate. Moving to item three.'",
+              "text": "You take the receipt, divide it evenly by head count, and say: 'Send your share now.'",
               "archetype": "lion",
               "trait_impact": {
                 "energy_presence": -0.7,
-                "warmth_vs_authority": -0.9,
+                "warmth_vs_authority": -0.8,
                 "conflict_assertiveness": 0.9,
                 "conflict_cooperativeness": -0.5
               }
             },
             {
               "letter": "D",
-              "text": "You interject calmly with data: 'Looking at historical user metrics, the performance delta between these two approaches is 0.2%. Let us look at the primary metric that actually impacts revenue.'",
+              "text": "You pull out your phone calculator, tally exact items, and show the fair total.",
               "archetype": "owl",
               "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": -0.7,
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.6,
                 "conflict_assertiveness": 0.2,
                 "conflict_cooperativeness": 0.3
               }
             },
             {
               "letter": "E",
-              "text": "You stand up with animated energy and rally the room: 'Team, let's step back and remember the huge vision! This launch is going to be spectacular, let's not get stuck in the weeds!'",
+              "text": "You loudly break the tension: 'Life is too short to fight over dinner!' and toast.",
               "archetype": "peacock",
               "trait_impact": {
-                "energy_presence": 0.9,
-                "warmth_vs_authority": 0.7,
-                "conflict_assertiveness": 0.4,
-                "conflict_cooperativeness": 0.6
+                "energy_presence": 0.8,
+                "warmth_vs_authority": 0.6,
+                "conflict_assertiveness": 0.3,
+                "conflict_cooperativeness": 0.5
               }
             },
             {
               "letter": "F",
-              "text": "You sit grounded and unshakeable while the room heats up; once the shouting subsides, you calmly summarize the core issue in one sentence and ground the room in reality.",
+              "text": "You stay completely calm, wait for them to stop, and quietly settle the dispute.",
               "archetype": "bear_wolf",
               "trait_impact": {
                 "energy_presence": -0.8,
@@ -519,33 +519,33 @@ window.QUESTIONNAIRE_DATA = {
         },
         {
           "id": "Q08",
-          "scenario": "Your manager sends out vague, contradictory directions for a high-priority project deliverable due by Friday afternoon.",
+          "scenario": "A friend organizing a group road trip sends out confusing, disorganized plans on the morning of departure.",
           "options": [
             {
               "letter": "A",
-              "text": "You check in with team members to see how everyone is feeling, ensure panic is calmed, and suggest approaching the manager collaboratively so no one feels isolated.",
+              "text": "You check in to make sure they aren't stressed and offer to help organize.",
               "archetype": "dolphin",
               "trait_impact": {
-                "energy_presence": 0.5,
-                "warmth_vs_authority": 0.9,
-                "conflict_assertiveness": -0.6,
-                "conflict_cooperativeness": 0.9
+                "energy_presence": 0.4,
+                "warmth_vs_authority": 0.8,
+                "conflict_assertiveness": -0.5,
+                "conflict_cooperativeness": 0.8
               }
             },
             {
               "letter": "B",
-              "text": "You read the political tea leaves to identify what leadership actually cares about, and craft a clever deliverable that satisfies both interpretations with minimal wasted effort.",
+              "text": "You quickly figure out the easiest route and quietly steer the group that way.",
               "archetype": "fox",
               "trait_impact": {
-                "energy_presence": 0.6,
-                "warmth_vs_authority": 0.1,
-                "conflict_assertiveness": 0.2,
-                "conflict_cooperativeness": -0.4
+                "energy_presence": 0.5,
+                "warmth_vs_authority": 0.2,
+                "conflict_assertiveness": 0.3,
+                "conflict_cooperativeness": -0.3
               }
             },
             {
               "letter": "C",
-              "text": "You contact the manager immediately with direct clarity: 'Your memo contains contradictory requirements on page two. We are proceeding with Option A unless you direct otherwise by 2 PM.'",
+              "text": "You take charge of the schedule: 'Car leaves at 9 AM, we meet at the station.'",
               "archetype": "lion",
               "trait_impact": {
                 "energy_presence": -0.7,
@@ -556,82 +556,10 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "D",
-              "text": "You send a structured, bulleted matrix documenting the contradictions, contingency risks, and three precise clarifying questions to establish an auditable paper trail.",
+              "text": "You map out the exact driving route, fuel stops, and rest areas for the group.",
               "archetype": "owl",
               "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": -0.7,
-                "conflict_assertiveness": 0.1,
-                "conflict_cooperativeness": 0.4
-              }
-            },
-            {
-              "letter": "E",
-              "text": "You call an impromptu creative session, frame the ambiguity as an exciting opportunity to innovate, and pitch a bold, show-stopping concept that blows past expectations.",
-              "archetype": "peacock",
-              "trait_impact": {
-                "energy_presence": 0.9,
-                "warmth_vs_authority": 0.7,
-                "conflict_assertiveness": 0.4,
-                "conflict_cooperativeness": 0.6
-              }
-            },
-            {
-              "letter": "F",
-              "text": "You stay unshakeable while others panic, hold the team steady, and focus quietly on building the core foundation that will be necessary regardless of which direction is picked.",
-              "archetype": "bear_wolf",
-              "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": 0.2,
-                "conflict_assertiveness": 0.0,
-                "conflict_cooperativeness": 0.9
-              }
-            }
-          ]
-        },
-        {
-          "id": "Q09",
-          "scenario": "You are presenting an important proposal when an assertive peer talks over you and tries to commandeer the conversation.",
-          "options": [
-            {
-              "letter": "A",
-              "text": "You nod warmly, let them finish their point, then say encouragingly: 'That's a great thought, and it ties right back into the first milestone I was sharing...'",
-              "archetype": "dolphin",
-              "trait_impact": {
-                "energy_presence": 0.4,
-                "warmth_vs_authority": 0.9,
-                "conflict_assertiveness": -0.5,
-                "conflict_cooperativeness": 0.9
-              }
-            },
-            {
-              "letter": "B",
-              "text": "You wait for them to take a breath, raise an amused eyebrow, and quip: 'Thanks for the preview trailer, now back to the feature film,' reclaiming the floor with charm.",
-              "archetype": "fox",
-              "trait_impact": {
-                "energy_presence": 0.6,
-                "warmth_vs_authority": 0.1,
-                "conflict_assertiveness": 0.4,
-                "conflict_cooperativeness": -0.3
-              }
-            },
-            {
-              "letter": "C",
-              "text": "You stop speaking instantly, hold steady unblinking eye contact with complete physical stillness for three seconds until the room falls silent, then continue firmly where you left off.",
-              "archetype": "lion",
-              "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": -0.9,
-                "conflict_assertiveness": 0.9,
-                "conflict_cooperativeness": -0.5
-              }
-            },
-            {
-              "letter": "D",
-              "text": "You wait patiently without emotion, take a note, and once they pause, state: 'Returning to the logical framework: there are two empirical constraints that must be addressed first.'",
-              "archetype": "owl",
-              "trait_impact": {
-                "energy_presence": -0.8,
+                "energy_presence": -0.7,
                 "warmth_vs_authority": -0.6,
                 "conflict_assertiveness": 0.2,
                 "conflict_cooperativeness": 0.3
@@ -639,23 +567,95 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "E",
-              "text": "You use expansive gestures and project a colorful voice to smoothly weave the interruption into your own presentation climax: 'Exactly! And that brings us to the most exciting reveal!'",
+              "text": "You tell everyone not to worry, put on a great playlist, and hype the road trip.",
               "archetype": "peacock",
               "trait_impact": {
-                "energy_presence": 0.9,
-                "warmth_vs_authority": 0.7,
-                "conflict_assertiveness": 0.5,
-                "conflict_cooperativeness": 0.6
+                "energy_presence": 0.8,
+                "warmth_vs_authority": 0.6,
+                "conflict_assertiveness": 0.3,
+                "conflict_cooperativeness": 0.5
               }
             },
             {
               "letter": "F",
-              "text": "You do not flinch or react; you maintain grounded posture, wait out the interruption with quiet strength, then calmly deliver your core point with unshakeable authority.",
+              "text": "You pack extra snacks and water, keeping everyone relaxed and grounded.",
+              "archetype": "bear_wolf",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": 0.3,
+                "conflict_assertiveness": 0.0,
+                "conflict_cooperativeness": 0.8
+              }
+            }
+          ]
+        },
+        {
+          "id": "Q09",
+          "scenario": "Someone loudly talks over you while you are telling a story to friends at a dinner table.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "You let them speak, smile, and then gently weave back into what you were saying.",
+              "archetype": "dolphin",
+              "trait_impact": {
+                "energy_presence": 0.4,
+                "warmth_vs_authority": 0.8,
+                "conflict_assertiveness": -0.6,
+                "conflict_cooperativeness": 0.8
+              }
+            },
+            {
+              "letter": "B",
+              "text": "You pause with an amused smirk and drop a witty comeback to reclaim the spotlight.",
+              "archetype": "fox",
+              "trait_impact": {
+                "energy_presence": 0.6,
+                "warmth_vs_authority": 0.2,
+                "conflict_assertiveness": 0.4,
+                "conflict_cooperativeness": -0.3
+              }
+            },
+            {
+              "letter": "C",
+              "text": "You stop talking, hold steady eye contact in silence until they stop, then finish.",
+              "archetype": "lion",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.8,
+                "conflict_assertiveness": 0.9,
+                "conflict_cooperativeness": -0.5
+              }
+            },
+            {
+              "letter": "D",
+              "text": "You wait calmly until they finish, then pick right back up with your point.",
+              "archetype": "owl",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.6,
+                "conflict_assertiveness": 0.1,
+                "conflict_cooperativeness": 0.2
+              }
+            },
+            {
+              "letter": "E",
+              "text": "You match their volume with laughter and turn the interruption into part of the story.",
+              "archetype": "peacock",
+              "trait_impact": {
+                "energy_presence": 0.9,
+                "warmth_vs_authority": 0.6,
+                "conflict_assertiveness": 0.4,
+                "conflict_cooperativeness": 0.5
+              }
+            },
+            {
+              "letter": "F",
+              "text": "You don't react; you stay relaxed and finish your thought when the room quiets down.",
               "archetype": "bear_wolf",
               "trait_impact": {
                 "energy_presence": -0.8,
                 "warmth_vs_authority": 0.2,
-                "conflict_assertiveness": 0.1,
+                "conflict_assertiveness": 0.0,
                 "conflict_cooperativeness": 0.8
               }
             }
@@ -663,11 +663,11 @@ window.QUESTIONNAIRE_DATA = {
         },
         {
           "id": "Q10",
-          "scenario": "A colleague co-owning a critical client presentation is visibly falling behind on their deliverables and offering excuses.",
+          "scenario": "A friend who promised to bring the snacks or music for a party forgets completely right before guests arrive.",
           "options": [
             {
               "letter": "A",
-              "text": "You reach out privately with deep concern: 'Hey, I noticed you are overwhelmed, are you okay? How can I help take some pressure off your plate?'",
+              "text": "You tell them it's totally okay, give them a hug, and search your kitchen together.",
               "archetype": "dolphin",
               "trait_impact": {
                 "energy_presence": 0.4,
@@ -678,123 +678,51 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "B",
-              "text": "You tactfully redistribute deliverables, shifting them to non-critical tasks with charming diplomacy while ensuring your own contributions are highlighted to leadership.",
+              "text": "You make a quick run to the corner store and turn the mishap into a fun party game.",
               "archetype": "fox",
               "trait_impact": {
-                "energy_presence": 0.6,
-                "warmth_vs_authority": 0.0,
+                "energy_presence": 0.5,
+                "warmth_vs_authority": 0.2,
                 "conflict_assertiveness": 0.3,
-                "conflict_cooperativeness": -0.3
-              }
-            },
-            {
-              "letter": "C",
-              "text": "You call an immediate 10-minute meeting: 'You missed two deadlines. That puts the project at risk. I need slides one through four in my inbox by 5 PM, or I'm escalating to the director.'",
-              "archetype": "lion",
-              "trait_impact": {
-                "energy_presence": -0.7,
-                "warmth_vs_authority": -0.9,
-                "conflict_assertiveness": 0.9,
-                "conflict_cooperativeness": -0.5
-              }
-            },
-            {
-              "letter": "D",
-              "text": "You audit the project milestone log, note the exact workflow blockages, and send a factual progress report with revised dependency timelines.",
-              "archetype": "owl",
-              "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": -0.7,
-                "conflict_assertiveness": 0.1,
-                "conflict_cooperativeness": 0.4
-              }
-            },
-            {
-              "letter": "E",
-              "text": "You set up an energetic work sprint with coffee, play upbeat music, and attempt to motivate them back into flow through enthusiasm and shared creative momentum.",
-              "archetype": "peacock",
-              "trait_impact": {
-                "energy_presence": 0.9,
-                "warmth_vs_authority": 0.7,
-                "conflict_assertiveness": 0.4,
-                "conflict_cooperativeness": 0.6
-              }
-            },
-            {
-              "letter": "F",
-              "text": "You steadily absorb the extra workload late into the night without complaining to protect the team's outcome, but establish a firm, quiet boundary with your peer afterward.",
-              "archetype": "bear_wolf",
-              "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": 0.3,
-                "conflict_assertiveness": 0.1,
-                "conflict_cooperativeness": 0.9
-              }
-            }
-          ]
-        },
-        {
-          "id": "Q11",
-          "scenario": "During an all-hands review, your team's project receives blunt, unexpected criticism from a senior executive.",
-          "options": [
-            {
-              "letter": "A",
-              "text": "You feel the sting of team tension, but respond with a gracious smile and gratitude: 'Thank you for that feedback; our priority is ensuring the team delivers what truly supports the mission.'",
-              "archetype": "dolphin",
-              "trait_impact": {
-                "energy_presence": 0.4,
-                "warmth_vs_authority": 0.9,
-                "conflict_assertiveness": -0.6,
-                "conflict_cooperativeness": 0.9
-              }
-            },
-            {
-              "letter": "B",
-              "text": "You maintain a calm, untroubled smirk, acknowledge the critique with witty self-awareness ('Fair point, clearly our caffeine hadn't peaked'), and smoothly pivot to a new upside angle.",
-              "archetype": "fox",
-              "trait_impact": {
-                "energy_presence": 0.6,
-                "warmth_vs_authority": 0.1,
-                "conflict_assertiveness": 0.2,
                 "conflict_cooperativeness": -0.2
               }
             },
             {
               "letter": "C",
-              "text": "You maintain motionless posture, look the executive straight in the eye without flinching, and respond with downward finality: 'Understood. We will have the revised execution plan by noon.'",
+              "text": "You send someone on a quick store run with a specific list while you finish setup.",
               "archetype": "lion",
               "trait_impact": {
                 "energy_presence": -0.7,
-                "warmth_vs_authority": -0.9,
-                "conflict_assertiveness": 0.8,
+                "warmth_vs_authority": -0.8,
+                "conflict_assertiveness": 0.9,
                 "conflict_cooperativeness": -0.4
               }
             },
             {
               "letter": "D",
-              "text": "You emotionally detach, viewing the feedback purely as test data, and ask: 'Which specific benchmark variance are you highlighting? Let us verify the dataset.'",
+              "text": "You quickly check what ingredients you already have and make a simple backup plan.",
               "archetype": "owl",
               "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": -0.7,
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.6,
                 "conflict_assertiveness": 0.2,
                 "conflict_cooperativeness": 0.3
               }
             },
             {
               "letter": "E",
-              "text": "You passionately re-articulate the creative core and emotional ambition of the project, defending the team's vision with dramatic flair and high energy.",
+              "text": "You put on an energetic phone playlist and make it feel like an impromptu party.",
               "archetype": "peacock",
               "trait_impact": {
-                "energy_presence": 0.9,
+                "energy_presence": 0.8,
                 "warmth_vs_authority": 0.6,
-                "conflict_assertiveness": 0.5,
+                "conflict_assertiveness": 0.4,
                 "conflict_cooperativeness": 0.5
               }
             },
             {
               "letter": "F",
-              "text": "You absorb the executive's fire like a bedrock wall, showing zero panic or defensiveness; you offer a single calm nod, containing the team's anxiety by remaining totally unshakeable.",
+              "text": "You stay completely relaxed, tell them not to worry, and calmly handle it.",
               "archetype": "bear_wolf",
               "trait_impact": {
                 "energy_presence": -0.8,
@@ -806,73 +734,145 @@ window.QUESTIONNAIRE_DATA = {
           ]
         },
         {
-          "id": "Q12",
-          "scenario": "A brand-new, cross-functional company initiative is launching, and team members can volunteer for specific project roles.",
+          "id": "Q11",
+          "scenario": "At a gathering, an acquaintance makes a teasing, snarky comment about your taste in front of others.",
           "options": [
             {
               "letter": "A",
-              "text": "You volunteer for team culture, stakeholder engagement, and team well-being to ensure all contributors feel supported and heard throughout the project.",
+              "text": "You laugh it off with kindness and say: 'Hey, everyone has their own style!'",
               "archetype": "dolphin",
               "trait_impact": {
-                "energy_presence": 0.5,
-                "warmth_vs_authority": 0.9,
+                "energy_presence": 0.4,
+                "warmth_vs_authority": 0.8,
                 "conflict_assertiveness": -0.5,
-                "conflict_cooperativeness": 0.9
+                "conflict_cooperativeness": 0.8
               }
             },
             {
               "letter": "B",
-              "text": "You pick the role of strategic scout or external dealmaker, navigating loose alliances, exploring new opportunities, and working with maximal autonomy.",
+              "text": "You fire right back with a playful, sharp joke that makes everyone laugh at them.",
               "archetype": "fox",
               "trait_impact": {
                 "energy_presence": 0.6,
                 "warmth_vs_authority": 0.1,
-                "conflict_assertiveness": 0.3,
+                "conflict_assertiveness": 0.4,
                 "conflict_cooperativeness": -0.3
               }
             },
             {
               "letter": "C",
-              "text": "You step forward immediately to claim project lead and operations driver, setting the schedule, delegating work, and taking full responsibility for results.",
+              "text": "You look them right in the eyes, unbothered, and say: 'I like it, and that's what matters.'",
               "archetype": "lion",
               "trait_impact": {
                 "energy_presence": -0.7,
                 "warmth_vs_authority": -0.8,
-                "conflict_assertiveness": 0.9,
-                "conflict_cooperativeness": -0.5
+                "conflict_assertiveness": 0.8,
+                "conflict_cooperativeness": -0.4
               }
             },
             {
               "letter": "D",
-              "text": "You select systems architecture, data modeling, and risk evaluation, ensuring the initiative is built on verifiable logic and sound methodology.",
+              "text": "You give a dry, factual reason why you chose it and move on without caring.",
               "archetype": "owl",
               "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": -0.7,
-                "conflict_assertiveness": 0.1,
-                "conflict_cooperativeness": 0.4
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.6,
+                "conflict_assertiveness": 0.2,
+                "conflict_cooperativeness": 0.2
               }
             },
             {
               "letter": "E",
-              "text": "You choose chief evangelist, pitch lead, and external spokesperson to present the team's wins and generate excitement across the organization.",
+              "text": "You strike a dramatic pose, own it proudly, and turn it into a fun moment.",
               "archetype": "peacock",
               "trait_impact": {
-                "energy_presence": 0.9,
-                "warmth_vs_authority": 0.8,
+                "energy_presence": 0.8,
+                "warmth_vs_authority": 0.6,
                 "conflict_assertiveness": 0.4,
-                "conflict_cooperativeness": 0.6
+                "conflict_cooperativeness": 0.5
               }
             },
             {
               "letter": "F",
-              "text": "You claim the operational foundation and execution backbone, ensuring that critical workflows, team resources, and day-to-day stability remain rock-solid.",
+              "text": "You give a calm, steady smile without giving them any reaction to feed on.",
               "archetype": "bear_wolf",
               "trait_impact": {
                 "energy_presence": -0.8,
                 "warmth_vs_authority": 0.2,
                 "conflict_assertiveness": 0.0,
-                "conflict_cooperativeness": 0.9
+                "conflict_cooperativeness": 0.7
+              }
+            }
+          ]
+        },
+        {
+          "id": "Q12",
+          "scenario": "Your friend group wants to throw a big surprise birthday party and needs people to step up.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "You volunteer to invite everyone, message people, and make sure everyone feels included.",
+              "archetype": "dolphin",
+              "trait_impact": {
+                "energy_presence": 0.4,
+                "warmth_vs_authority": 0.8,
+                "conflict_assertiveness": -0.5,
+                "conflict_cooperativeness": 0.8
+              }
+            },
+            {
+              "letter": "B",
+              "text": "You plan the clever trick to lure your friend to the venue without them suspecting.",
+              "archetype": "fox",
+              "trait_impact": {
+                "energy_presence": 0.5,
+                "warmth_vs_authority": 0.2,
+                "conflict_assertiveness": 0.3,
+                "conflict_cooperativeness": -0.2
+              }
+            },
+            {
+              "letter": "C",
+              "text": "You take the lead, assign tasks to everyone, and make sure things get done on time.",
+              "archetype": "lion",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.8,
+                "conflict_assertiveness": 0.9,
+                "conflict_cooperativeness": -0.4
+              }
+            },
+            {
+              "letter": "D",
+              "text": "You organize the budget, venue logistics, and timing down to the minute.",
+              "archetype": "owl",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.6,
+                "conflict_assertiveness": 0.2,
+                "conflict_cooperativeness": 0.3
+              }
+            },
+            {
+              "letter": "E",
+              "text": "You volunteer to run the music, host the toast, and create an unforgettable moment.",
+              "archetype": "peacock",
+              "trait_impact": {
+                "energy_presence": 0.9,
+                "warmth_vs_authority": 0.7,
+                "conflict_assertiveness": 0.4,
+                "conflict_cooperativeness": 0.5
+              }
+            },
+            {
+              "letter": "F",
+              "text": "You handle setup and cleanup, making sure everything runs smoothly behind the scenes.",
+              "archetype": "bear_wolf",
+              "trait_impact": {
+                "energy_presence": -0.8,
+                "warmth_vs_authority": 0.3,
+                "conflict_assertiveness": 0.0,
+                "conflict_cooperativeness": 0.8
               }
             }
           ]
@@ -880,16 +880,16 @@ window.QUESTIONNAIRE_DATA = {
       ]
     },
     {
-      "category": "high_stakes_and_crisis",
-      "category_title": "High-Stakes, Crisis & Boundary Dilemmas",
+      "category": "everyday_dilemmas_and_boundaries",
+      "category_title": "Everyday Dilemmas, Boundaries & Surprises",
       "questions": [
         {
           "id": "Q13",
-          "scenario": "You and five traveling companions arrive at the airport to find your flight cancelled, 200 angry people in line, and an event you must attend tomorrow morning.",
+          "scenario": "You and a group of friends get stuck with a three-hour delay or flat tire on the way to an event.",
           "options": [
             {
               "letter": "A",
-              "text": "You gather the group, ensure everyone has water, calm the most anxious traveler, and warmly say: 'We are in this together. No matter what, we'll find a solution.'",
+              "text": "You make sure everyone has water, comfort anyone feeling anxious, and keep spirits up.",
               "archetype": "dolphin",
               "trait_impact": {
                 "energy_presence": 0.5,
@@ -900,234 +900,18 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "B",
-              "text": "You skip the 200-person line, immediately call the airline's overseas support desk with zero queue time, find an alternate transit route, and smirk: 'Follow me, I found a loophole.'",
+              "text": "You find a fun nearby diner or shortcut while everyone else is complaining.",
               "archetype": "fox",
               "trait_impact": {
                 "energy_presence": 0.6,
-                "warmth_vs_authority": 0.1,
-                "conflict_assertiveness": 0.4,
-                "conflict_cooperativeness": -0.4
-              }
-            },
-            {
-              "letter": "C",
-              "text": "You walk with purposeful stride straight to the duty manager's desk, speak with downward command, and decisively negotiate priority rebooking for your group while others complain.",
-              "archetype": "lion",
-              "trait_impact": {
-                "energy_presence": -0.7,
-                "warmth_vs_authority": -0.9,
-                "conflict_assertiveness": 0.9,
-                "conflict_cooperativeness": -0.5
-              }
-            },
-            {
-              "letter": "D",
-              "text": "You open live air-traffic apps, analyze secondary regional airport schedules, bus routes, and car rental inventories, presenting the group with three ranked contingency plans.",
-              "archetype": "owl",
-              "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": -0.7,
-                "conflict_assertiveness": 0.2,
-                "conflict_cooperativeness": 0.3
-              }
-            },
-            {
-              "letter": "E",
-              "text": "You rally everyone's morale with humor and drama: 'This is the plot twist our trip needed!' You snap a funny group photo and charm the gate agent with radiant enthusiasm.",
-              "archetype": "peacock",
-              "trait_impact": {
-                "energy_presence": 0.9,
-                "warmth_vs_authority": 0.8,
-                "conflict_assertiveness": 0.4,
-                "conflict_cooperativeness": 0.6
-              }
-            },
-            {
-              "letter": "F",
-              "text": "You sit the group down in a quiet spot, guard the luggage, hand out snacks, and stand as an unshakeable fortress of calm, ensuring nobody gets separated or panics.",
-              "archetype": "bear_wolf",
-              "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": 0.3,
-                "conflict_assertiveness": 0.0,
-                "conflict_cooperativeness": 0.9
-              }
-            }
-          ]
-        },
-        {
-          "id": "Q14",
-          "scenario": "In a crowded meeting, an angry attendee publicly points at you and makes an inaccurate, hostile accusation regarding a failure that was not your fault.",
-          "options": [
-            {
-              "letter": "A",
-              "text": "You validate their frustration with empathy: 'I understand why you are so upset. It is painful when things go wrong, and I want to work with you to resolve it.'",
-              "archetype": "dolphin",
-              "trait_impact": {
-                "energy_presence": 0.4,
-                "warmth_vs_authority": 0.9,
-                "conflict_assertiveness": -0.6,
-                "conflict_cooperativeness": 0.9
-              }
-            },
-            {
-              "letter": "B",
-              "text": "You chuckle softly, raise an amused eyebrow, and deliver a clever, disarming retort that exposes the accuser's flawed premise without escalating into a brawl.",
-              "archetype": "fox",
-              "trait_impact": {
-                "energy_presence": 0.6,
-                "warmth_vs_authority": 0.1,
-                "conflict_assertiveness": 0.3,
-                "conflict_cooperativeness": -0.3
-              }
-            },
-            {
-              "letter": "C",
-              "text": "You fix them with an unblinking stare, let a heavy silence hang, and state with low-pitch finality: 'Your statement is factually false. Sit down and let us review the audit trail.'",
-              "archetype": "lion",
-              "trait_impact": {
-                "energy_presence": -0.7,
-                "warmth_vs_authority": -0.9,
-                "conflict_assertiveness": 0.9,
-                "conflict_cooperativeness": -0.5
-              }
-            },
-            {
-              "letter": "D",
-              "text": "You pull up the verified timestamped contract or log on the screen, reading the objective specifications aloud without emotional inflection or defensiveness.",
-              "archetype": "owl",
-              "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": -0.7,
-                "conflict_assertiveness": 0.2,
-                "conflict_cooperativeness": 0.3
-              }
-            },
-            {
-              "letter": "E",
-              "text": "You stand up with passionate energy, deliver a charismatic defense of integrity and the project's vision, and turn the audience's emotional allegiance back to your side.",
-              "archetype": "peacock",
-              "trait_impact": {
-                "energy_presence": 0.9,
-                "warmth_vs_authority": 0.6,
-                "conflict_assertiveness": 0.6,
-                "conflict_cooperativeness": 0.5
-              }
-            },
-            {
-              "letter": "F",
-              "text": "You plant your feet firmly, broaden your shoulders, and absorb the accusation with complete stoic stillness; you wait until the room goes dead silent, then speak with deep resonance that restores order.",
-              "archetype": "bear_wolf",
-              "trait_impact": {
-                "energy_presence": -0.8,
                 "warmth_vs_authority": 0.2,
-                "conflict_assertiveness": 0.1,
-                "conflict_cooperativeness": 0.8
-              }
-            }
-          ]
-        },
-        {
-          "id": "Q15",
-          "scenario": "An acquaintance persistently pressures you to do an inappropriate personal or professional favor that crosses your ethical or personal boundaries.",
-          "options": [
-            {
-              "letter": "A",
-              "text": "You feel guilty saying no, soften the refusal with warm apologies and kind compliments, and offer an alternative small way to assist so they don't feel rejected.",
-              "archetype": "dolphin",
-              "trait_impact": {
-                "energy_presence": 0.4,
-                "warmth_vs_authority": 0.9,
-                "conflict_assertiveness": -0.7,
-                "conflict_cooperativeness": 0.8
-              }
-            },
-            {
-              "letter": "B",
-              "text": "You laugh it off with an ironic joke, give an ambiguous, non-committal answer that leaves the person baffled, and smoothly change the subject to slip away.",
-              "archetype": "fox",
-              "trait_impact": {
-                "energy_presence": 0.6,
-                "warmth_vs_authority": 0.0,
-                "conflict_assertiveness": 0.3,
-                "conflict_cooperativeness": -0.4
-              }
-            },
-            {
-              "letter": "C",
-              "text": "You look them dead in the eye and deliver a flat, unhesitating 'No. That won't happen,' with downward inflection and zero excuses.",
-              "archetype": "lion",
-              "trait_impact": {
-                "energy_presence": -0.7,
-                "warmth_vs_authority": -0.9,
-                "conflict_assertiveness": 0.9,
-                "conflict_cooperativeness": -0.5
-              }
-            },
-            {
-              "letter": "D",
-              "text": "You cite the exact governance policy, ethical guidelines, and legal constraints in detached, analytical language that makes debate impossible.",
-              "archetype": "owl",
-              "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": -0.7,
-                "conflict_assertiveness": 0.2,
-                "conflict_cooperativeness": 0.3
-              }
-            },
-            {
-              "letter": "E",
-              "text": "You dramatize your own overwhelming chaos: 'Darling, I wish I could! My schedule is an absolute disaster right now, I can barely keep my head above water!'",
-              "archetype": "peacock",
-              "trait_impact": {
-                "energy_presence": 0.9,
-                "warmth_vs_authority": 0.7,
-                "conflict_assertiveness": 0.3,
-                "conflict_cooperativeness": 0.5
-              }
-            },
-            {
-              "letter": "F",
-              "text": "You quietly and firmly state: 'I don't do that.' If pressured further, you hold an immovable wall of silence and steady eye contact until they back down.",
-              "archetype": "bear_wolf",
-              "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": 0.2,
-                "conflict_assertiveness": 0.2,
-                "conflict_cooperativeness": 0.8
-              }
-            }
-          ]
-        },
-        {
-          "id": "Q16",
-          "scenario": "A sudden fire alarm sounds in a packed conference venue, and confusion starts causing people to panic and push toward a blocked doorway.",
-          "options": [
-            {
-              "letter": "A",
-              "text": "You grab the hand of a frightened stranger, make warm eye contact to calm them, and guide them step by step toward safety.",
-              "archetype": "dolphin",
-              "trait_impact": {
-                "energy_presence": 0.5,
-                "warmth_vs_authority": 0.9,
-                "conflict_assertiveness": -0.4,
-                "conflict_cooperativeness": 0.9
-              }
-            },
-            {
-              "letter": "B",
-              "text": "You quickly identify an uncrowded side service exit, slip through effortlessly, and gesture for your immediate companions to follow.",
-              "archetype": "fox",
-              "trait_impact": {
-                "energy_presence": 0.6,
-                "warmth_vs_authority": 0.0,
                 "conflict_assertiveness": 0.4,
                 "conflict_cooperativeness": -0.3
               }
             },
             {
               "letter": "C",
-              "text": "You step onto an elevated ledge, project a resonant commanding voice: 'Stop pushing. Two lines. Exit through the east doors now,' directing the crowd with decisive authority.",
+              "text": "You immediately call roadside assistance, check the spare tire, and get a fix moving.",
               "archetype": "lion",
               "trait_impact": {
                 "energy_presence": -0.7,
@@ -1138,60 +922,132 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "D",
-              "text": "You locate the illuminated evacuation diagram, calculate the widest unobstructed exit route, and systematically lead people along the optimal path.",
+              "text": "You check traffic maps and ETAs to calculate the best route forward.",
               "archetype": "owl",
               "trait_impact": {
-                "energy_presence": -0.8,
+                "energy_presence": -0.7,
                 "warmth_vs_authority": -0.6,
                 "conflict_assertiveness": 0.2,
-                "conflict_cooperativeness": 0.4
+                "conflict_cooperativeness": 0.3
               }
             },
             {
               "letter": "E",
-              "text": "You loudly shout clear instructions with vibrant energy, waving your arms to draw the crowd's focus toward safe exits and cutting through confusion.",
+              "text": "You turn the breakdown into an adventure, take goofy selfies, and keep morale high.",
               "archetype": "peacock",
               "trait_impact": {
                 "energy_presence": 0.9,
                 "warmth_vs_authority": 0.7,
-                "conflict_assertiveness": 0.5,
+                "conflict_assertiveness": 0.4,
                 "conflict_cooperativeness": 0.6
               }
             },
             {
               "letter": "F",
-              "text": "You act as a physical bulwark against the surge, standing firm to prevent trampling, and steadily usher people out with unshakeable calm.",
+              "text": "You stay completely calm, guard the bags, and make everyone feel safe and relaxed.",
               "archetype": "bear_wolf",
               "trait_impact": {
                 "energy_presence": -0.8,
                 "warmth_vs_authority": 0.3,
-                "conflict_assertiveness": 0.2,
-                "conflict_cooperativeness": 0.9
+                "conflict_assertiveness": 0.0,
+                "conflict_cooperativeness": 0.8
               }
             }
           ]
         },
         {
-          "id": "Q17",
-          "scenario": "At 8 PM, an unexpected system crash threatens to derail a multi-million-dollar midnight launch for your company.",
+          "id": "Q14",
+          "scenario": "At a party, someone mistakenly blames you for spilling a drink or breaking something you didn't touch.",
           "options": [
             {
               "letter": "A",
-              "text": "You order food and coffee for the exhausted engineers, check on team stress levels, and remind everyone that their health and unity matter most.",
+              "text": "You reassure them gently: 'It wasn't me, but let's grab napkins and clean it together.'",
               "archetype": "dolphin",
               "trait_impact": {
                 "energy_presence": 0.4,
                 "warmth_vs_authority": 0.9,
-                "conflict_assertiveness": -0.6,
+                "conflict_assertiveness": -0.5,
                 "conflict_cooperativeness": 0.9
               }
             },
             {
               "letter": "B",
-              "text": "You engineer a clever temporary workaround that bypasses the broken module, allowing the launch to proceed while buying 48 hours to fix the root bug.",
+              "text": "You make a quick, clever remark that playfully proves you were nowhere near it.",
               "archetype": "fox",
               "trait_impact": {
-                "energy_presence": 0.6,
+                "energy_presence": 0.5,
+                "warmth_vs_authority": 0.2,
+                "conflict_assertiveness": 0.3,
+                "conflict_cooperativeness": -0.2
+              }
+            },
+            {
+              "letter": "C",
+              "text": "You state firmly and directly: 'I didn't touch that. Look, it was over there.'",
+              "archetype": "lion",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.8,
+                "conflict_assertiveness": 0.9,
+                "conflict_cooperativeness": -0.5
+              }
+            },
+            {
+              "letter": "D",
+              "text": "You point out the physical facts calmly: 'My glass is full and I just walked in.'",
+              "archetype": "owl",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.6,
+                "conflict_assertiveness": 0.2,
+                "conflict_cooperativeness": 0.2
+              }
+            },
+            {
+              "letter": "E",
+              "text": "You dramatically hold up your clean hands and turn the misunderstanding into a laugh.",
+              "archetype": "peacock",
+              "trait_impact": {
+                "energy_presence": 0.8,
+                "warmth_vs_authority": 0.6,
+                "conflict_assertiveness": 0.4,
+                "conflict_cooperativeness": 0.5
+              }
+            },
+            {
+              "letter": "F",
+              "text": "You stand your ground calmly without raising your voice, waiting for truth to show itself.",
+              "archetype": "bear_wolf",
+              "trait_impact": {
+                "energy_presence": -0.8,
+                "warmth_vs_authority": 0.2,
+                "conflict_assertiveness": 0.0,
+                "conflict_cooperativeness": 0.8
+              }
+            }
+          ]
+        },
+        {
+          "id": "Q15",
+          "scenario": "An acquaintance persistently pressures you to do a personal favor that makes you uncomfortable.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "You feel bad saying no, so you offer a small, easier alternative instead.",
+              "archetype": "dolphin",
+              "trait_impact": {
+                "energy_presence": 0.3,
+                "warmth_vs_authority": 0.8,
+                "conflict_assertiveness": -0.6,
+                "conflict_cooperativeness": 0.8
+              }
+            },
+            {
+              "letter": "B",
+              "text": "You dodge it smoothly with an ironic excuse and change the subject.",
+              "archetype": "fox",
+              "trait_impact": {
+                "energy_presence": 0.4,
                 "warmth_vs_authority": 0.1,
                 "conflict_assertiveness": 0.3,
                 "conflict_cooperativeness": -0.3
@@ -1199,118 +1055,262 @@ window.QUESTIONNAIRE_DATA = {
             },
             {
               "letter": "C",
-              "text": "You establish immediate command: 'All side discussions off. Lead engineer on my line. If not patched by 10:30 PM, we roll back. I take full responsibility for the call.'",
+              "text": "You look them in the eye and say a clear, direct: 'No, I can't do that.'",
               "archetype": "lion",
               "trait_impact": {
                 "energy_presence": -0.7,
-                "warmth_vs_authority": -0.9,
+                "warmth_vs_authority": -0.8,
                 "conflict_assertiveness": 0.9,
                 "conflict_cooperativeness": -0.5
               }
             },
             {
               "letter": "D",
-              "text": "You pull runtime diagnostic logs, trace the memory stack, and systematically isolate the failure point without guessing or rushing into blind hotfixes.",
+              "text": "You give a calm, factual reason why it doesn't work for you.",
               "archetype": "owl",
               "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": -0.7,
-                "conflict_assertiveness": 0.1,
-                "conflict_cooperativeness": 0.3
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.6,
+                "conflict_assertiveness": 0.2,
+                "conflict_cooperativeness": 0.2
               }
             },
             {
               "letter": "E",
-              "text": "You keep the war-room energy sky-high, rally the team with motivational encouragement, and prepare an exciting, confident message for executive stakeholders.",
+              "text": "You dramatize how crazy your schedule is: 'I wish I could, but my week is pure chaos!'",
               "archetype": "peacock",
               "trait_impact": {
-                "energy_presence": 0.9,
-                "warmth_vs_authority": 0.7,
-                "conflict_assertiveness": 0.4,
-                "conflict_cooperativeness": 0.6
+                "energy_presence": 0.8,
+                "warmth_vs_authority": 0.5,
+                "conflict_assertiveness": 0.3,
+                "conflict_cooperativeness": 0.4
               }
             },
             {
               "letter": "F",
-              "text": "You sit at your station like an immovable anchor, calmly working through recovery steps, shielding the engineers from executive noise and panic.",
+              "text": "You simply tell them: 'I'm not doing that,' and hold your ground in silence.",
               "archetype": "bear_wolf",
               "trait_impact": {
                 "energy_presence": -0.8,
                 "warmth_vs_authority": 0.2,
                 "conflict_assertiveness": 0.0,
-                "conflict_cooperativeness": 0.9
+                "conflict_cooperativeness": 0.7
               }
             }
           ]
         },
         {
-          "id": "Q18",
-          "scenario": "At an informal gathering, an aggressive loudmouth starts publicly mocking and humiliating a quiet, soft-spoken peer.",
+          "id": "Q16",
+          "scenario": "The power suddenly cuts out during a crowded indoor party, leaving everyone in pitch darkness.",
           "options": [
             {
               "letter": "A",
-              "text": "You step right in, wrap an arm around the quiet peer, warmly validate them in front of everyone, and gently escort them away from the hostile environment.",
+              "text": "You reach out to check on the person next to you and make sure nobody is scared.",
               "archetype": "dolphin",
               "trait_impact": {
-                "energy_presence": 0.5,
+                "energy_presence": 0.4,
                 "warmth_vs_authority": 0.9,
-                "conflict_assertiveness": -0.4,
+                "conflict_assertiveness": -0.5,
                 "conflict_cooperativeness": 0.9
               }
             },
             {
               "letter": "B",
-              "text": "You fire back with a razor-sharp, devastating quip at the loudmouth that turns the entire room's laughter onto the aggressor, instantly neutralizing their attack.",
+              "text": "You use your phone flashlight to slip to the breaker box and flip the switch.",
               "archetype": "fox",
               "trait_impact": {
-                "energy_presence": 0.6,
-                "warmth_vs_authority": 0.1,
-                "conflict_assertiveness": 0.4,
+                "energy_presence": 0.5,
+                "warmth_vs_authority": 0.2,
+                "conflict_assertiveness": 0.3,
                 "conflict_cooperativeness": -0.2
               }
             },
             {
               "letter": "C",
-              "text": "You step into the loudmouth's personal space, fix them with an unblinking, heavy gaze, and say in a low, chilling tone: 'You are done. Walk away right now.'",
+              "text": "You speak up in a clear, loud voice: 'Everyone stay where you are, turn on phone lights.'",
               "archetype": "lion",
               "trait_impact": {
                 "energy_presence": -0.7,
-                "warmth_vs_authority": -0.9,
+                "warmth_vs_authority": -0.8,
                 "conflict_assertiveness": 0.9,
                 "conflict_cooperativeness": -0.4
               }
             },
             {
               "letter": "D",
-              "text": "You intervene with clinical detachment, dissecting the loudmouth's insecure posturing in front of the group with calm, humiliating precision.",
+              "text": "You locate the emergency exit lights and calculate the quickest way to check the fuse.",
               "archetype": "owl",
               "trait_impact": {
-                "energy_presence": -0.8,
-                "warmth_vs_authority": -0.7,
-                "conflict_assertiveness": 0.3,
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.6,
+                "conflict_assertiveness": 0.2,
                 "conflict_cooperativeness": 0.3
               }
             },
             {
               "letter": "E",
-              "text": "You loudly interrupt with dramatic outrage, call out the bullying for everyone to hear, and rally the room to shower the quiet peer with respect.",
+              "text": "You shout: 'Spooky dance party!' and wave your flashlight to turn it into fun.",
               "archetype": "peacock",
               "trait_impact": {
                 "energy_presence": 0.9,
-                "warmth_vs_authority": 0.7,
-                "conflict_assertiveness": 0.6,
-                "conflict_cooperativeness": 0.6
+                "warmth_vs_authority": 0.6,
+                "conflict_assertiveness": 0.4,
+                "conflict_cooperativeness": 0.5
               }
             },
             {
               "letter": "F",
-              "text": "You step smoothly between the aggressor and your friend like a solid brick wall, place a heavy calming hand on your friend, and radiate silent, overwhelming physical protection.",
+              "text": "You stay right where you are like an anchor, helping people stay calm.",
               "archetype": "bear_wolf",
               "trait_impact": {
                 "energy_presence": -0.8,
-                "warmth_vs_authority": 0.3,
-                "conflict_assertiveness": 0.3,
+                "warmth_vs_authority": 0.2,
+                "conflict_assertiveness": 0.0,
+                "conflict_cooperativeness": 0.8
+              }
+            }
+          ]
+        },
+        {
+          "id": "Q17",
+          "scenario": "An hour before guests arrive at your place for dinner, the main food order cancels completely.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "You text guests warmly to come over anyway and turn it into a fun potluck.",
+              "archetype": "dolphin",
+              "trait_impact": {
+                "energy_presence": 0.5,
+                "warmth_vs_authority": 0.9,
+                "conflict_assertiveness": -0.6,
                 "conflict_cooperativeness": 0.9
+              }
+            },
+            {
+              "letter": "B",
+              "text": "You quickly order great local takeout and plan to serve it as a surprise feast.",
+              "archetype": "fox",
+              "trait_impact": {
+                "energy_presence": 0.6,
+                "warmth_vs_authority": 0.2,
+                "conflict_assertiveness": 0.3,
+                "conflict_cooperativeness": -0.2
+              }
+            },
+            {
+              "letter": "C",
+              "text": "You immediately assign quick food runs and pivot the menu without flinching.",
+              "archetype": "lion",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.8,
+                "conflict_assertiveness": 0.9,
+                "conflict_cooperativeness": -0.4
+              }
+            },
+            {
+              "letter": "D",
+              "text": "You quickly check your pantry and make a simple, delicious backup meal.",
+              "archetype": "owl",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.6,
+                "conflict_assertiveness": 0.2,
+                "conflict_cooperativeness": 0.3
+              }
+            },
+            {
+              "letter": "E",
+              "text": "You put on great music, pour drinks, and make the food mix-up a hilarious story.",
+              "archetype": "peacock",
+              "trait_impact": {
+                "energy_presence": 0.8,
+                "warmth_vs_authority": 0.6,
+                "conflict_assertiveness": 0.4,
+                "conflict_cooperativeness": 0.5
+              }
+            },
+            {
+              "letter": "F",
+              "text": "You stay totally calm, fire up the grill or oven, and unhurriedly cook simple food.",
+              "archetype": "bear_wolf",
+              "trait_impact": {
+                "energy_presence": -0.8,
+                "warmth_vs_authority": 0.2,
+                "conflict_assertiveness": 0.0,
+                "conflict_cooperativeness": 0.8
+              }
+            }
+          ]
+        },
+        {
+          "id": "Q18",
+          "scenario": "At an informal gathering, a loud, pushy person starts making fun of a quiet, gentle friend in the room.",
+          "options": [
+            {
+              "letter": "A",
+              "text": "You step in, stand beside your friend, and warmly praise them in front of everyone.",
+              "archetype": "dolphin",
+              "trait_impact": {
+                "energy_presence": 0.5,
+                "warmth_vs_authority": 0.9,
+                "conflict_assertiveness": -0.6,
+                "conflict_cooperativeness": 0.9
+              }
+            },
+            {
+              "letter": "B",
+              "text": "You roast the loud person with a sharp comeback that turns the laughter on them.",
+              "archetype": "fox",
+              "trait_impact": {
+                "energy_presence": 0.6,
+                "warmth_vs_authority": 0.2,
+                "conflict_assertiveness": 0.4,
+                "conflict_cooperativeness": -0.3
+              }
+            },
+            {
+              "letter": "C",
+              "text": "You look the loud person dead in the eyes and say: 'That's enough. Back off right now.'",
+              "archetype": "lion",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.8,
+                "conflict_assertiveness": 0.9,
+                "conflict_cooperativeness": -0.5
+              }
+            },
+            {
+              "letter": "D",
+              "text": "You calmly and objectively call out the rude behavior so everyone sees how childish it is.",
+              "archetype": "owl",
+              "trait_impact": {
+                "energy_presence": -0.7,
+                "warmth_vs_authority": -0.6,
+                "conflict_assertiveness": 0.2,
+                "conflict_cooperativeness": 0.2
+              }
+            },
+            {
+              "letter": "E",
+              "text": "You interrupt with dramatic flair, shifting the spotlight and rallying support for your friend.",
+              "archetype": "peacock",
+              "trait_impact": {
+                "energy_presence": 0.8,
+                "warmth_vs_authority": 0.6,
+                "conflict_assertiveness": 0.4,
+                "conflict_cooperativeness": 0.5
+              }
+            },
+            {
+              "letter": "F",
+              "text": "You step right between them like a wall, put a hand on your friend's shoulder, and protect them.",
+              "archetype": "bear_wolf",
+              "trait_impact": {
+                "energy_presence": -0.8,
+                "warmth_vs_authority": 0.2,
+                "conflict_assertiveness": 0.0,
+                "conflict_cooperativeness": 0.8
               }
             }
           ]
