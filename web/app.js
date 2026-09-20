@@ -389,7 +389,7 @@
   };
 
   // Set your Google Apps Script Web App URL here to write directly to Google Sheets:
-  const GOOGLE_SHEET_URL = ''; 
+  const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbysjkg8QGQzvZsQEu8IE43UhDm2HUH51Y2GdpC-vpoOKNpY-J1OtBF3-2w2M9ihYMeN/exec'; 
 
   function persistAssessmentSubmission(isExplicit = false) {
     if (!lastResult) return;
