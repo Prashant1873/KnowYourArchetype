@@ -630,13 +630,14 @@
    * Dark / Light Theme Controller
    */
   function initTheme() {
-    const savedTheme = localStorage.getItem('charisma_theme') || 'dark';
+    const savedTheme = localStorage.getItem('charisma_theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
 
     const btnThemeToggle = document.getElementById('btn-theme-toggle');
     if (btnThemeToggle) {
+      btnThemeToggle.setAttribute('aria-label', savedTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
       btnThemeToggle.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme') || 'dark';
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
         const next = current === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', next);
         localStorage.setItem('charisma_theme', next);
@@ -647,6 +648,11 @@
 
   // Self-start
   document.addEventListener('DOMContentLoaded', () => {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
     initTheme();
     initData();
     initEvents();
