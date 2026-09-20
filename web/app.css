@@ -245,15 +245,12 @@ body {
 .view-screen {
   display: none;
   opacity: 0;
-  transform: translateY(16px);
-  transition: opacity var(--duration-normal) var(--spring-ease),
-              transform var(--duration-normal) var(--spring-ease);
+  transition: opacity var(--duration-normal) var(--spring-ease);
 }
 
 .view-screen.active {
   display: block;
   opacity: 1;
-  transform: translateY(0);
 }
 
 /* ==========================================================================
@@ -1572,7 +1569,6 @@ body {
   align-items: flex-start;
   justify-content: center;
   padding: 40px 20px 60px;
-  min-height: 100vh;
 }
 
 .onboarding-card {

@@ -176,7 +176,7 @@
       }
     });
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }
 
   /**
@@ -186,8 +186,9 @@
     const q = questions[currentIndex];
     if (!q) return;
 
-    // Automatically scroll to the top on question transition
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Scroll to top on every question transition
+    window.scrollTo({ top: 0, behavior: 'instant' });
+
 
     // Progress percentage
     const progressPct = ((currentIndex + 1) / questions.length) * 100;
