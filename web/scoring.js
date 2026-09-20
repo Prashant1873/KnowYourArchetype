@@ -187,9 +187,45 @@
       hybrid_profile_title: hybridTitle,
       all_percentages: percentages,
       trait_vector: userVector,
+      composite_trait_vector: computeWeightedCentroidVector(percentages, centroids),
       choice_frequencies: archetypeCounts,
       ranked_keys: ranked.map(r => r[0])
     };
+  }
+
+  /**
+   * Computes a weighted composite trait vector by blending all archetype centroid
+   * vectors weighted by their final score percentages.
+   * e.g. if Lion = 40%, Fox = 30%, Dolphin = 30%, the composite is:
+   *   (0.4 * Lion_centroid) + (0.3 * Fox_centroid) + (0.3 * Dolphin_centroid)
+   * This reveals precisely where the user sits in 4D interpersonal trait space.
+   *
+   * @param {Object} percentages - { lion: 42.3, fox: 28.1, ... }
+   * @param {Object} centroids   - centroid data dictionary
+   * @returns {Object} weighted composite vector, each value in [-1, 1]
+   */
+  function computeWeightedCentroidVector(percentages, centroids) {
+    const dims = ['energy_presence', 'warmth_vs_authority', 'conflict_assertiveness', 'conflict_cooperativeness'];
+    const composite = {};
+    dims.forEach(d => { composite[d] = 0.0; });
+
+    let totalWeight = 0.0;
+    Object.entries(percentages).forEach(([arch, pct]) => {
+      const weight = pct / 100.0;
+      totalWeight += weight;
+      const cVec = centroids[arch] && centroids[arch].vector;
+      if (!cVec) return;
+      dims.forEach(d => {
+        composite[d] += weight * (cVec[d] || 0.0);
+      });
+    });
+
+    if (totalWeight > 0) {
+      dims.forEach(d => {
+        composite[d] = Number((composite[d] / totalWeight).toFixed(4));
+      });
+    }
+    return composite;
   }
 
   /**
@@ -307,6 +343,7 @@
   root.CharismaScoring = {
     scoreAssessment: scoreAssessment,
     generateRadarSvg: generateRadarSvg,
+    computeWeightedCentroidVector: computeWeightedCentroidVector,
     ARCHETYPE_COLORS: ARCHETYPE_COLORS
   };
 

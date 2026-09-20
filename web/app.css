@@ -1168,6 +1168,8 @@ body {
   border-radius: var(--radius-lg);
   padding: 28px 24px;
   box-shadow: var(--panel-shadow);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .card-heading {
@@ -1249,6 +1251,16 @@ body {
   height: auto;
   overflow: visible;
   color: var(--text-primary);
+}
+
+.radar-interpretation-text {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-subtle);
+  text-align: left;
 }
 
 /* Stress Shadow Alert Box */

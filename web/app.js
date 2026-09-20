@@ -358,9 +358,69 @@
   }
 
   /**
+   * Builds a plain-English interpretation paragraph from the 4 composite trait
+   * vector dimension values (each in range [-1.0, +1.0]).
+   * Uses 5-band labels per axis:
+   *   ≤ -0.5  : strongly low
+   *   -0.5 to -0.15 : moderately low
+   *   -0.15 to +0.15 : balanced
+   *   +0.15 to +0.5 : moderately high
+   *   ≥ +0.5  : strongly high
+   */
+  function buildTraitInterpretation(vec) {
+    function band(v) {
+      if (v <= -0.5)  return 'strongly low';
+      if (v <= -0.15) return 'moderately low';
+      if (v <   0.15) return 'balanced';
+      if (v <   0.5)  return 'moderately high';
+      return 'strongly high';
+    }
+
+    const ep = band(vec.energy_presence);
+    const wa = band(vec.warmth_vs_authority);
+    const ca = band(vec.conflict_assertiveness);
+    const cc = band(vec.conflict_cooperativeness);
+
+    const epPhrase = {
+      'strongly low':    'a reserved, low-energy presence that commands through stillness',
+      'moderately low':  'a calm, contained presence with deliberate social engagement',
+      'balanced':        'a contextually adaptive energy — energetic when needed, composed otherwise',
+      'moderately high': 'a noticeable social energy and active engagement in group settings',
+      'strongly high':   'a high-voltage, magnetic social presence that electrifies rooms'
+    }[ep];
+
+    const waPhrase = {
+      'strongly low':    'a strong authority-first orientation — direct, decisive, and task-focused over rapport',
+      'moderately low':  'a tendency to lead with structure and clarity before warmth',
+      'balanced':        'a natural balance between warmth and authority, flexing as the moment demands',
+      'moderately high': 'a warm relational pull — you lead by building trust and genuine connection',
+      'strongly high':   'a deeply empathetic relational orientation — warmth and belonging come first'
+    }[wa];
+
+    const caPhrase = {
+      'strongly low':    'strongly conflict-avoidant — you prioritize harmony over confrontation',
+      'moderately low':  'mildly non-confrontational — you pick battles and prefer smooth resolution',
+      'balanced':        'situationally assertive — you push back when it matters, yield when it doesn\'t',
+      'moderately high': 'confident and direct — you assert your position clearly without hesitation',
+      'strongly high':   'highly assertive — you confront friction head-on and hold your ground firmly'
+    }[ca];
+
+    const ccPhrase = {
+      'strongly low':    'highly independent in resolution — you prefer decisive action over group consensus',
+      'moderately low':  'selectively collaborative — cooperative when aligned, independent when not',
+      'balanced':        'flexibly cooperative — you collaborate readily but can act unilaterally when needed',
+      'moderately high': 'naturally cooperative — you seek shared solutions and inclusive outcomes',
+      'strongly high':   'deeply collaborative — harmony and collective agreement are your default mode'
+    }[cc];
+
+    return `Your composite profile reflects ${epPhrase}, paired with ${waPhrase}. Under pressure you are ${caPhrase}, while your resolution style is ${ccPhrase}.`;
+  }
+
+  /**
    * Executes the scoring engine and renders the full results dashboard.
    */
   function calculateAndRenderResults() {
+
     try {
       lastResult = window.CharismaScoring.scoreAssessment(
         userAnswers,
@@ -464,12 +524,21 @@
         });
       }, 100);
 
-      // Render SVG Trait Radar Chart
+      // Render SVG Trait Radar Chart (weighted composite of all archetype centroids)
       const radarContainer = document.getElementById('radar-container');
-      radarContainer.innerHTML = window.CharismaScoring.generateRadarSvg(res.trait_vector, theme.primary);
+      const compositeVec = res.composite_trait_vector;
+      radarContainer.innerHTML = window.CharismaScoring.generateRadarSvg(compositeVec, theme.primary);
+
+      // Render Trait Vector Interpretation paragraph
+      const radarInterpEl = document.getElementById('radar-interpretation');
+      if (radarInterpEl) {
+        radarInterpEl.textContent = buildTraitInterpretation(compositeVec);
+      }
 
       // Render Stress Shadow
       document.getElementById('res-shadow-title').textContent = `${primary.name} ${primaryEmoji} Stress Shadow & Calibration`;
+      document.getElementById('res-shadow-desc').textContent = primary.shadow_alert;
+
       document.getElementById('res-shadow-desc').textContent = primary.shadow_alert;
 
       // Display results view
