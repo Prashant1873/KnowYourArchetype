@@ -429,7 +429,7 @@
         body: JSON.stringify(payload)
       }).then(() => {
         if (isExplicit && savedStatusMsg) {
-          savedStatusMsg.textContent = '✓ Rating logged to your Google Sheet!';
+          savedStatusMsg.textContent = '✓ Rating submitted!';
           setTimeout(() => { savedStatusMsg.textContent = ''; }, 3500);
         }
       }).catch(err => {
