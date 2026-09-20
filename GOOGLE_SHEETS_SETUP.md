@@ -81,7 +81,7 @@ function doPost(e) {
 ---
 
 ### Step 4: Paste URL into `web/app.js`
-Open [`web/app.js`](file:///c:/Users/u1233270/Downloads/Personal%20Apps/Charisma/web/app.js) and paste your URL into line 258:
+Open [`web/app.js`](file:///c:/Users/u1233270/Downloads/Personal%20Apps/Charisma/web/app.js) and paste your URL into line 370:
 
 ```javascript
 const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
