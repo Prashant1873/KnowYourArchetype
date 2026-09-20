@@ -165,14 +165,23 @@
 
     // Render Options
     optionsContainer.innerHTML = '';
-    const selectedLetter = userAnswers[q.id] || null;
+    const selectedLetters = Array.isArray(userAnswers[q.id])
+      ? userAnswers[q.id]
+      : (userAnswers[q.id] ? [userAnswers[q.id]] : []);
 
     q.options.forEach((opt, idx) => {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'option-btn';
-      if (selectedLetter === opt.letter.toUpperCase()) {
+      const isSelected = selectedLetters.includes(opt.letter.toUpperCase());
+      if (isSelected) {
         btn.classList.add('selected');
+        btn.setAttribute('aria-checked', 'true');
+      } else {
+        btn.setAttribute('aria-checked', 'false');
+        if (selectedLetters.length >= 3) {
+          btn.classList.add('disabled-limit');
+        }
       }
 
       btn.dataset.letter = opt.letter.toUpperCase();
@@ -181,6 +190,11 @@
       btn.innerHTML = `
         <div class="option-badge">${opt.letter.toUpperCase()}</div>
         <div class="option-text">${opt.text}</div>
+        <div class="option-checkbox" aria-hidden="true">
+          <svg class="check-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
       `;
 
       btn.addEventListener('click', () => {
@@ -193,10 +207,62 @@
     // Update Back button state
     btnBack.disabled = (currentIndex === 0);
 
-    // Update Next button state & text
-    const isAnswered = Boolean(selectedLetter);
+    updateMultiSelectState();
+  }
+
+  /**
+   * Updates multi-select badge counter, button limit states, and Next button availability.
+   */
+  function updateMultiSelectState() {
+    const q = questions[currentIndex];
+    if (!q) return;
+
+    const selectedLetters = Array.isArray(userAnswers[q.id])
+      ? userAnswers[q.id]
+      : (userAnswers[q.id] ? [userAnswers[q.id]] : []);
+    const count = selectedLetters.length;
+    const maxReached = count >= 3;
+
+    // Update Counter Badge
+    const counterBadge = document.getElementById('selection-counter-badge');
+    const countNum = document.getElementById('selection-count-num');
+    if (countNum) countNum.textContent = count;
+    if (counterBadge) {
+      if (count > 0) {
+        counterBadge.classList.add('has-selections');
+      } else {
+        counterBadge.classList.remove('has-selections');
+      }
+      if (maxReached) {
+        counterBadge.classList.add('max-reached');
+      } else {
+        counterBadge.classList.remove('max-reached');
+      }
+    }
+
+    // Update Option Buttons
+    const allBtns = optionsContainer.querySelectorAll('.option-btn');
+    allBtns.forEach(btn => {
+      const letter = btn.dataset.letter;
+      const isSel = selectedLetters.includes(letter);
+      if (isSel) {
+        btn.classList.add('selected');
+        btn.classList.remove('disabled-limit');
+        btn.setAttribute('aria-checked', 'true');
+      } else {
+        btn.classList.remove('selected');
+        btn.setAttribute('aria-checked', 'false');
+        if (maxReached) {
+          btn.classList.add('disabled-limit');
+        } else {
+          btn.classList.remove('disabled-limit');
+        }
+      }
+    });
+
+    // Enable/disable Next button
     if (btnNext) {
-      btnNext.disabled = !isAnswered;
+      btnNext.disabled = (count === 0);
       if (btnNextText) {
         btnNextText.textContent = (currentIndex === questions.length - 1) ? 'See Results' : 'Next Scenario';
       }
@@ -204,23 +270,34 @@
   }
 
   /**
-   * Handles user selection of an option.
+   * Handles user toggling of an option (1 to 3 multi-select).
    */
   function handleOptionSelection(letter, clickedBtn) {
     const q = questions[currentIndex];
-    userAnswers[q.id] = letter;
+    let selected = Array.isArray(userAnswers[q.id])
+      ? [...userAnswers[q.id]]
+      : (userAnswers[q.id] ? [userAnswers[q.id]] : []);
 
-    // Highlight selected button
-    const allBtns = optionsContainer.querySelectorAll('.option-btn');
-    allBtns.forEach(b => b.classList.remove('selected'));
-    if (clickedBtn) {
-      clickedBtn.classList.add('selected');
+    const idx = selected.indexOf(letter);
+    if (idx > -1) {
+      // Toggle off
+      selected.splice(idx, 1);
+    } else {
+      // Toggle on if under max limit (3)
+      if (selected.length < 3) {
+        selected.push(letter);
+      } else {
+        // Max limit reached -> micro feedback shake
+        if (clickedBtn) {
+          clickedBtn.classList.add('shake-limit');
+          setTimeout(() => clickedBtn.classList.remove('shake-limit'), 450);
+        }
+        return;
+      }
     }
 
-    // Enable Next button now that an option is selected
-    if (btnNext) {
-      btnNext.disabled = false;
-    }
+    userAnswers[q.id] = selected;
+    updateMultiSelectState();
   }
 
   /**
@@ -228,7 +305,11 @@
    */
   function advanceToNextQuestion() {
     const q = questions[currentIndex];
-    if (!userAnswers[q.id]) return;
+    const selected = Array.isArray(userAnswers[q.id])
+      ? userAnswers[q.id]
+      : (userAnswers[q.id] ? [userAnswers[q.id]] : []);
+
+    if (selected.length === 0) return;
 
     if (currentIndex < questions.length - 1) {
       currentIndex++;
@@ -399,6 +480,11 @@
     const pEmoji = getArchetypeEmoji(lastResult.primary_archetype.key);
     const sEmoji = lastResult.secondary_wing ? getArchetypeEmoji(lastResult.secondary_wing.key) : '';
 
+    const cleanAnswers = {};
+    Object.entries(userAnswers).forEach(([k, v]) => {
+      cleanAnswers[k] = Array.isArray(v) ? v.join(', ') : v;
+    });
+
     const payload = {
       session_id: currentSessionId,
       timestamp: new Date().toISOString(),
@@ -417,7 +503,7 @@
       bear_wolf_pct: lastResult.all_percentages.bear_wolf + '%',
       accuracy_rating: `${accuracyRating} / 10 (${ACCURACY_LABELS[accuracyRating] || 'Rated'})`,
       result: lastResult,
-      answers: userAnswers
+      answers: cleanAnswers
     };
 
     // Send to Google Sheets if configured

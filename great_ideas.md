@@ -37,3 +37,10 @@ This file records key ideas and strategic directions provided for the Charisma p
   - Commanding Amber (`#F59E0B`) primary CTA pills with dark typography and warm amber glows.
   - Distraction-free editorial minimalism: removal of all kicker tags and eyebrow pills above headlines.
   - Seamless high-contrast porcelain light mode with deep obsidian text (`#090D16`), eliminating invisible text.
+
+- **Multi-Select Behavioral Actions (1 to 3 Choices) with Second-Person 'You...' Framing**:
+  - Elevates assessment accuracy by capturing real-world behavioral nuance: humans naturally deploy combined actions in social/crisis moments (e.g. disarming wit [Fox] paired with decisive leadership [Lion], or active listening [Dolphin] backed by steadfast calm [Bear]).
+  - Second-person 'You...' phrasing prompts immediate visceral self-projection and authentic gut-level responses, eliminating clinical 3rd-person detachment.
+  - Constrained multi-select (1 to 3 actions with live counter and graceful limit dampening) prevents acquiescence bias and produces rich, continuous mathematical trait vectors.
+
+

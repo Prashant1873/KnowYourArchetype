@@ -583,6 +583,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .step-indicator {
@@ -597,6 +599,47 @@ body {
 .step-indicator strong {
   color: var(--text-primary);
   font-size: 1rem;
+}
+
+/* Multi-select Counter Badge */
+.selection-counter-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--text-muted);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  transition: all var(--duration-fast) var(--spring-ease);
+}
+
+.selection-counter-badge.has-selections {
+  color: #4f46e5;
+  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(99, 102, 241, 0.08);
+}
+
+[data-theme="dark"] .selection-counter-badge.has-selections {
+  color: #818cf8;
+  border-color: rgba(129, 140, 248, 0.4);
+  background: rgba(99, 102, 241, 0.15);
+}
+
+.selection-counter-badge.max-reached {
+  color: #d97706;
+  border-color: rgba(217, 119, 6, 0.45);
+  background: rgba(245, 158, 11, 0.12);
+}
+
+[data-theme="dark"] .selection-counter-badge.max-reached {
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.5);
+  background: rgba(245, 158, 11, 0.18);
 }
 
 /* Scenario Card */
@@ -663,6 +706,11 @@ body {
   box-shadow: 0 4px 16px -4px rgba(99, 102, 241, 0.25);
 }
 
+[data-theme="dark"] .option-btn.selected {
+  background: rgba(99, 102, 241, 0.15);
+  box-shadow: 0 4px 20px -4px rgba(99, 102, 241, 0.4);
+}
+
 .option-badge {
   flex-shrink: 0;
   width: 28px;
@@ -694,6 +742,78 @@ body {
 
 .option-text {
   flex: 1;
+}
+
+/* Checkbox Indicator for Multi-Select */
+.option-checkbox {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 1.5px solid var(--border-medium);
+  background: var(--bg-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--duration-fast) var(--spring-ease);
+  color: #ffffff;
+  margin-top: 2px;
+}
+
+.option-checkbox .check-svg {
+  opacity: 0;
+  transform: scale(0.6);
+  transition: all var(--duration-fast) var(--spring-ease);
+}
+
+.option-btn:hover .option-checkbox {
+  border-color: var(--border-focus);
+}
+
+.option-btn.selected .option-checkbox {
+  background: var(--border-focus);
+  border-color: var(--border-focus);
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.45);
+}
+
+.option-btn.selected .option-checkbox .check-svg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Disabled state when maximum 3 selections reached */
+.option-btn.disabled-limit {
+  opacity: 0.55;
+  filter: grayscale(0.25);
+  cursor: not-allowed;
+}
+
+.option-btn.disabled-limit:hover {
+  transform: none;
+  border-color: var(--border-subtle);
+  background: var(--bg-card);
+}
+
+.option-btn.disabled-limit:hover .option-badge {
+  background: rgba(128, 128, 128, 0.1);
+  color: var(--text-primary);
+  border-color: var(--border-subtle);
+}
+
+.option-btn.disabled-limit:hover .option-checkbox {
+  border-color: var(--border-medium);
+}
+
+/* Limit reached shake animation */
+.option-btn.shake-limit {
+  animation: limitShake 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes limitShake {
+  10%, 90% { transform: translate3d(-2px, 0, 0); }
+  20%, 80% { transform: translate3d(3px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-3px, 0, 0); }
+  40%, 60% { transform: translate3d(3px, 0, 0); }
 }
 
 /* Wizard Navigation Bar */

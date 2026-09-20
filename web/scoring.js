@@ -80,24 +80,31 @@
       archetypeCounts[key] = 0;
     });
 
-    // Iterate through submitted answers
-    Object.entries(answers).forEach(([qId, letter]) => {
-      const upperLetter = letter.toUpperCase();
-      if (!qMap[qId] || !qMap[qId][upperLetter]) return;
+    // Iterate through submitted answers (supports both array of letters e.g. ['A', 'C'] and single letter 'A')
+    Object.entries(answers).forEach(([qId, val]) => {
+      const letters = Array.isArray(val) ? val : [val];
+      if (letters.length === 0) return;
 
-      const opt = qMap[qId][upperLetter];
-      const arch = opt.archetype;
-      if (archetypeCounts[arch] !== undefined) {
-        archetypeCounts[arch] += 1;
-      }
+      const weightPerChoice = 1.0 / letters.length;
 
-      if (opt.trait_impact) {
-        Object.entries(opt.trait_impact).forEach(([dim, val]) => {
-          if (traitAccum[dim] !== undefined) {
-            traitAccum[dim] += val;
-          }
-        });
-      }
+      letters.forEach(letter => {
+        const upperLetter = String(letter).trim().toUpperCase();
+        if (!qMap[qId] || !qMap[qId][upperLetter]) return;
+
+        const opt = qMap[qId][upperLetter];
+        const arch = opt.archetype;
+        if (archetypeCounts[arch] !== undefined) {
+          archetypeCounts[arch] += weightPerChoice;
+        }
+
+        if (opt.trait_impact) {
+          Object.entries(opt.trait_impact).forEach(([dim, impactVal]) => {
+            if (traitAccum[dim] !== undefined) {
+              traitAccum[dim] += (impactVal * weightPerChoice);
+            }
+          });
+        }
+      });
     });
 
     // Compute user mean trait vector
