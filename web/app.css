@@ -320,45 +320,6 @@ body {
   line-height: 1.7;
 }
 
-.hero-feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-  margin-bottom: 36px;
-  text-align: left;
-}
-
-.feature-item {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-  transition: all var(--duration-fast) var(--spring-ease);
-}
-
-.feature-item:hover {
-  border-color: var(--border-medium);
-  transform: translateY(-2px);
-}
-
-.feature-title {
-  font-family: var(--font-body);
-  font-size: 0.96rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 6px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.feature-desc {
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  line-height: 1.55;
-}
 
 /* Participant Starting Identity Box */
 .start-identity-box {
@@ -1236,15 +1197,6 @@ body {
     font-size: 1.18rem;
   }
 
-  .hero-feature-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 44px;
-  }
-
-  .feature-item {
-    padding: 24px 22px;
-  }
 
   .start-identity-box {
     max-width: 680px;
