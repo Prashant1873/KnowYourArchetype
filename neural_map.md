@@ -43,6 +43,7 @@ graph TD
   - High-Contrast Porcelain Light (`#F8FAFC`) with deep obsidian typography (`#090D16`), fixing previous white text issues.
 - **Features**:
   - Name / Email capture with "Stay anonymous" option on welcome screen.
+  - Interactive 6 Archetypes animated showcase spectrum on home screen with staggered floating keyframes and calibrated hover glows.
   - 18 sequential question cards with Next / Previous buttons and keyboard shortcuts (A–F, Enter ↵, Arrow keys).
   - "What Your Result Implies" breakdown (How You Influence, Where You Thrive, Hybrid Dynamic).
   - 1-10 Accuracy slider logging directly to Google Sheets column `Accuracy Rating (1-10)`.

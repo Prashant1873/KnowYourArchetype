@@ -320,6 +320,141 @@ body {
   line-height: 1.7;
 }
 
+/* ==========================================================================
+   6 ARCHETYPES INTERACTIVE SHOWCASE SPECTRUM
+   ========================================================================== */
+.archetypes-showcase-section {
+  width: 100%;
+  max-width: 960px;
+  margin: 28px auto 38px;
+}
+
+.archetypes-spectrum-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.archetype-preview-card {
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  text-align: left;
+  transition: transform 0.4s var(--spring-ease), box-shadow 0.4s var(--spring-ease), border-color 0.3s ease;
+  animation: archFloat 6s ease-in-out infinite alternate;
+  animation-delay: var(--float-delay, 0s);
+  cursor: default;
+  overflow: hidden;
+  will-change: transform, box-shadow;
+}
+
+.archetype-preview-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--arch-color);
+  opacity: 0.7;
+  transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.archetype-preview-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--arch-color);
+  box-shadow: 0 16px 36px -8px var(--arch-glow), 0 0 0 1px var(--arch-color);
+  animation-play-state: paused;
+  z-index: 2;
+}
+
+.archetype-preview-card:hover::before {
+  opacity: 1;
+  height: 4px;
+}
+
+.arch-card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.arch-avatar-ring {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--arch-glow) 0%, transparent 70%);
+  border: 1.5px solid var(--arch-color);
+  transition: transform 0.4s var(--spring-ease), box-shadow 0.4s var(--spring-ease);
+  flex-shrink: 0;
+}
+
+.archetype-preview-card:hover .arch-avatar-ring {
+  transform: scale(1.18) rotate(8deg);
+  box-shadow: 0 0 18px var(--arch-glow);
+}
+
+.arch-card-title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.arch-card-name {
+  font-family: var(--font-headline);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+.archetype-preview-card:hover .arch-card-name {
+  color: var(--arch-color);
+}
+
+.arch-role-pill {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--arch-color);
+  background: color-mix(in srgb, var(--arch-color) 12%, transparent);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  display: inline-block;
+}
+
+.arch-card-trait {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0;
+  text-align: left;
+}
+
+@keyframes archFloat {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 /* Participant Starting Identity Box */
 .start-identity-box {
@@ -1141,6 +1276,16 @@ body {
   .hero-card {
     padding: 32px 20px;
   }
+  .archetypes-showcase-section {
+    margin: 20px auto 28px;
+  }
+  .archetypes-spectrum-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .archetype-preview-card {
+    padding: 15px 16px;
+  }
   .scenario-card {
     padding: 24px 18px;
   }
@@ -1197,6 +1342,15 @@ body {
     font-size: 1.18rem;
   }
 
+  .archetypes-showcase-section {
+    max-width: 1040px;
+    margin: 36px auto 44px;
+  }
+
+  .archetypes-spectrum-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 
   .start-identity-box {
     max-width: 680px;
