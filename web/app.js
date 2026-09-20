@@ -23,6 +23,8 @@
 
   const btnStart = document.getElementById('btn-start');
   const btnBack = document.getElementById('btn-back');
+  const btnNext = document.getElementById('btn-next');
+  const btnNextText = document.getElementById('btn-next-text');
   const btnRetake = document.getElementById('btn-retake');
   const btnCopyResult = document.getElementById('btn-copy-result');
 
@@ -189,6 +191,15 @@
 
     // Update Back button state
     btnBack.disabled = (currentIndex === 0);
+
+    // Update Next button state & text
+    const isAnswered = Boolean(selectedLetter);
+    if (btnNext) {
+      btnNext.disabled = !isAnswered;
+      if (btnNextText) {
+        btnNextText.textContent = (currentIndex === questions.length - 1) ? 'See Results' : 'Next Scenario';
+      }
+    }
   }
 
   /**
@@ -205,17 +216,27 @@
       clickedBtn.classList.add('selected');
     }
 
-    // Brief delay for tactile feedback before advancing
-    setTimeout(() => {
-      if (currentIndex < questions.length - 1) {
-        currentIndex++;
-        renderCurrentQuestion();
-      } else {
-        // All 18 completed -> show calculation loader and compute results
-        showScreen('loader');
-        setTimeout(calculateAndRenderResults, 900);
-      }
-    }, 180);
+    // Enable Next button now that an option is selected
+    if (btnNext) {
+      btnNext.disabled = false;
+    }
+  }
+
+  /**
+   * Advances to the next question or triggers calculation on the last question.
+   */
+  function advanceToNextQuestion() {
+    const q = questions[currentIndex];
+    if (!userAnswers[q.id]) return;
+
+    if (currentIndex < questions.length - 1) {
+      currentIndex++;
+      renderCurrentQuestion();
+    } else {
+      // All 18 completed -> show calculation loader and compute results
+      showScreen('loader');
+      setTimeout(calculateAndRenderResults, 900);
+    }
   }
 
   /**
@@ -449,11 +470,19 @@
       return;
     }
 
+    // Enter or Right Arrow advances to next question if enabled
+    if ((e.key === 'Enter' || e.key === 'ArrowRight') && btnNext && !btnNext.disabled) {
+      e.preventDefault();
+      advanceToNextQuestion();
+      return;
+    }
+
     // Left Arrow for previous question
     if (e.key === 'ArrowLeft' && currentIndex > 0) {
       e.preventDefault();
       currentIndex--;
       renderCurrentQuestion();
+      return;
     }
   }
 
@@ -529,6 +558,10 @@
         renderCurrentQuestion();
       }
     });
+
+    if (btnNext) {
+      btnNext.addEventListener('click', advanceToNextQuestion);
+    }
 
     btnRetake.addEventListener('click', () => {
       currentIndex = 0;
