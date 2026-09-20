@@ -153,6 +153,9 @@
     const q = questions[currentIndex];
     if (!q) return;
 
+    // Automatically scroll to the top on question transition
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
     // Progress percentage
     const progressPct = ((currentIndex + 1) / questions.length) * 100;
     progressBar.style.width = `${progressPct}%`;
