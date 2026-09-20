@@ -21,6 +21,7 @@
     results: document.getElementById('screen-results')
   };
 
+  const brandLogoBtn = document.getElementById('brand-logo-btn');
   const btnStart = document.getElementById('btn-start');
   const btnBack = document.getElementById('btn-back');
   const btnNext = document.getElementById('btn-next');
@@ -537,6 +538,13 @@
    * Event Listeners & Bootstrapping
    */
   function initEvents() {
+    if (brandLogoBtn) {
+      brandLogoBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        showScreen('welcome');
+      });
+    }
+
     btnStart.addEventListener('click', () => {
       const nameInput = document.getElementById('start-input-name');
       const emailInput = document.getElementById('start-input-email');
