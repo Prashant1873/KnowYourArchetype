@@ -1,0 +1,56 @@
+{
+  "taxonomy_name": "Six Charisma Archetypes Behavioral Trait Taxonomy",
+  "version": "1.0.0",
+  "source_corpus": "six_charisma_archetypes_and_traits/results",
+  "dimensions": [
+    {
+      "id": "energy_presence",
+      "name": "Kinetic Energy & Physical Presence",
+      "description": "Measures physical stillness and grounded containment versus animated kinetic movement and expressive expansion.",
+      "scale_min": -1.0,
+      "scale_max": 1.0,
+      "low_anchor": "Stillness, deliberate pauses, grounded weight, low physical leakage",
+      "high_anchor": "Kinetic agility, animated gestures, high vocal dynamism, spatial expansion"
+    },
+    {
+      "id": "warmth_vs_authority",
+      "name": "Warmth vs. Authority Orientation",
+      "description": "Measures relational inclusion and psychological reassurance versus direct command, competence, and downward certainty.",
+      "scale_min": -1.0,
+      "scale_max": 1.0,
+      "low_anchor": "Unilateral command, downward inflections, outcome-driven detachment, high status",
+      "high_anchor": "Affiliative warmth, open palms, head tilts, emotional consensus, high empathy"
+    },
+    {
+      "id": "conversational_framing",
+      "name": "Conversational & Frame Control Strategy",
+      "description": "Primary verbal mechanism used to navigate social status, disagreements, and dialogue.",
+      "archetype_mapping": {
+        "dolphin": "Consensus & Validation (emotional bridging, active listening, mutual affirmation)",
+        "fox": "Lateral Reframing & Wit (observational irony, tactical pivots, disarming banter)",
+        "lion": "Bottom-Line Directness (agenda enforcement, Reader's Digest conciseness, decisive boundaries)",
+        "owl": "Socratic Precision (empirical inquiry, 'why/how' questions, objective truth-testing)",
+        "peacock": "Narrative Elevation (theatrical storytelling, emotional contagion, spotlight hooks)",
+        "bear_wolf": "Stoic Containment (non-reactive listening, unhurried cadence, absorbing friction)"
+      }
+    },
+    {
+      "id": "conflict_assertiveness",
+      "name": "Conflict Assertiveness vs. Accommodating",
+      "description": "How forcefully the individual pushes their own agenda during disagreement.",
+      "scale_min": -1.0,
+      "scale_max": 1.0,
+      "low_anchor": "Accommodating, harmony-seeking, tension-diffusing",
+      "high_anchor": "Competing, confronting, boundary-enforcing"
+    },
+    {
+      "id": "conflict_cooperativeness",
+      "name": "Conflict Cooperativeness vs. Independence",
+      "description": "Degree to which the individual prioritizes collective alignment over autonomous execution.",
+      "scale_min": -1.0,
+      "scale_max": 1.0,
+      "low_anchor": "Autonomous, independent, detached, uncompromising",
+      "high_anchor": "Collaborative, collective, pack-oriented, relationship-preserving"
+    }
+  ]
+}

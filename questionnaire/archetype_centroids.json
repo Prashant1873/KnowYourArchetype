@@ -1,0 +1,82 @@
+{
+  "centroids": {
+    "dolphin": {
+      "name": "The Dolphin",
+      "subtitle": "The Affiliative Connector",
+      "vector": {
+        "energy_presence": 0.50,
+        "warmth_vs_authority": 0.85,
+        "conflict_assertiveness": -0.60,
+        "conflict_cooperativeness": 0.90
+      },
+      "dominant_framing": "consensus_validation",
+      "superpower": "Creates instant psychological safety, communal belonging, and team cohesion.",
+      "shadow_alert": "Vulnerability to boundary erosion, people-pleasing, and emotional exhaustion from conflict avoidance."
+    },
+    "fox": {
+      "name": "The Fox",
+      "subtitle": "The Tactical Strategist",
+      "vector": {
+        "energy_presence": 0.60,
+        "warmth_vs_authority": 0.10,
+        "conflict_assertiveness": 0.20,
+        "conflict_cooperativeness": -0.30
+      },
+      "dominant_framing": "lateral_reframing_wit",
+      "superpower": "Brilliant crisis improvisation, lateral problem-solving, and sharp social reading.",
+      "shadow_alert": "Risk of being perceived as opportunistic or cynical; emotional guardedness behind an ironic mask."
+    },
+    "lion": {
+      "name": "The Lion",
+      "subtitle": "The Commanding Authority",
+      "vector": {
+        "energy_presence": -0.70,
+        "warmth_vs_authority": -0.85,
+        "conflict_assertiveness": 0.90,
+        "conflict_cooperativeness": -0.50
+      },
+      "dominant_framing": "bottom_line_directness",
+      "superpower": "Decisive crisis command, high-stakes clarity, and unwavering goal direction.",
+      "shadow_alert": "Abrasive impatience, steamrolling collaborative input, and autocratic rigidity under stress."
+    },
+    "owl": {
+      "name": "The Owl",
+      "subtitle": "The Intellectual Sage",
+      "vector": {
+        "energy_presence": -0.80,
+        "warmth_vs_authority": -0.65,
+        "conflict_assertiveness": 0.10,
+        "conflict_cooperativeness": 0.30
+      },
+      "dominant_framing": "socratic_precision",
+      "superpower": "Objective risk foresight, flawless empirical analysis, and emotional detachment during chaos.",
+      "shadow_alert": "Analysis paralysis, intellectual aloofness, and hyper-critical skepticism that alienates peers."
+    },
+    "peacock": {
+      "name": "The Peacock",
+      "subtitle": "The Expressive Showman",
+      "vector": {
+        "energy_presence": 0.90,
+        "warmth_vs_authority": 0.70,
+        "conflict_assertiveness": 0.40,
+        "conflict_cooperativeness": 0.60
+      },
+      "dominant_framing": "narrative_elevation",
+      "superpower": "Electrifying enthusiasm, visionary storytelling, and ability to break ice across any audience.",
+      "shadow_alert": "Shiny-object syndrome, conversational hijacking, and emotional volatility when validation is withheld."
+    },
+    "bear_wolf": {
+      "name": "The Bear / Wolf",
+      "subtitle": "The Grounded Anchor & Guardian",
+      "vector": {
+        "energy_presence": -0.75,
+        "warmth_vs_authority": 0.20,
+        "conflict_assertiveness": 0.00,
+        "conflict_cooperativeness": 0.85
+      },
+      "dominant_framing": "stoic_containment",
+      "superpower": "Unshakeable grounding, emotional containment of room anxiety, and steadfast pack loyalty.",
+      "shadow_alert": "Stubborn resistance to sudden change, sullen withdrawal, and explosive retaliation when pushed past limits."
+    }
+  }
+}

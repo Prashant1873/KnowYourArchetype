@@ -1,0 +1,438 @@
+{
+  "category": "social_and_casual",
+  "category_title": "Social & Casual Everyday Life Scenarios",
+  "questions": [
+    {
+      "id": "Q01",
+      "scenario": "A group of six friends sits at a restaurant. Nobody can agree on what to share or order, and the waiter is hovering awkwardly.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Warmly asks each person what flavors they crave, offers to split their own plate with anyone unsure, and gives the server a reassuring smile to dissolve the tension.",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.5,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.7,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Quips with a witty remark about starving to death, then negotiates a quick clever compromise ('two spicy, two mild, split the bill evenly') and winks at the server.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.2,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": -0.2
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Takes the menu, looks around the table with steady eye contact, and says: 'We're getting the house sampler, two chef specials, and sparkling water. Any severe allergies speak now.' Hands menu to the server.",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.9,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.5
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Quietly calculates the portion-to-price ratio on the menu, points out that the pre-set combo saves 30% per person, and asks the waiter two precise questions about preparation times.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.7,
+            "conflict_assertiveness": 0.1,
+            "conflict_cooperativeness": 0.3
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Gasps enthusiastically at the artisan drinks and dessert list, shares an animated story about the last time they were here, and rallies the table to order the most exciting dishes on the menu.",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.7,
+            "conflict_assertiveness": 0.4,
+            "conflict_cooperativeness": 0.6
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Leans back with relaxed shoulders, completely unbothered by the delay, and calmly tells the table: 'Take your time, no rush at all. We are here to enjoy each other.'",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.3,
+            "conflict_assertiveness": -0.1,
+            "conflict_cooperativeness": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "scenario": "You arrive at a crowded party or mixer where you only know the host, who is currently tied up talking to someone across the room.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Notices someone standing by themselves near the refreshments, walks over with an open smile, and warmly introduces themselves to make sure neither of them is alone.",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.5,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.5,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Drifts around the perimeter with an observant smirk, catches the vibe of various circles, and effortlessly drops a clever, funny remark into an ongoing conversation to break in.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.1,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": -0.3
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Walks in with an upright, expansive posture and steady gaze, scans the space deliberately without checking their phone, steps up to the bar, and comfortably owns the central space.",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.8,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.4
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Assesses the room layout, acoustics, and crowd density; finds a calm corner or interesting spot (like an art display or bookshelf) to observe the dynamics before engaging.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.7,
+            "conflict_assertiveness": 0.0,
+            "conflict_cooperativeness": 0.2
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Enters with radiant, animated energy, offers an expressive compliment to the first person they make eye contact with, and immediately starts mingling with high excitement.",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.8,
+            "conflict_assertiveness": 0.4,
+            "conflict_cooperativeness": 0.7
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Finds a solid, comfortable seating spot, settles in with steady unhurried breathing, and lets conversations naturally gravitate toward their calm, grounded presence.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.2,
+            "conflict_assertiveness": -0.1,
+            "conflict_cooperativeness": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q03",
+      "scenario": "A close friend is venting for the fifth time this week about the exact same minor coworker issue that has a simple solution.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tilts head with deep empathy, gently touches their arm, and validates their emotional distress: 'I hear you, it is so exhausting carrying that tension every day.'",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.4,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.6,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Smirks playfully and highlights the coworker's absurdity with biting wit: 'You should buy them an employee-of-the-month mug just to completely baffle their ego.'",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.1,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": -0.2
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Listens for 60 seconds, then cuts in with calm downward inflection: 'You have two choices: tell them directly to stop at 9 AM, or drop it. Ruminating isn't changing anything.'",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.9,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.5
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Asks Socratic questions to deconstruct the logic: 'What specific policy did they violate? What objective evidence do you have if this goes to leadership?'",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.6,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": 0.4
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Gasps dramatically: 'No they did NOT! Tell me every single detail! Let's roleplay what you're going to say back to shut them down completely!'",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.7,
+            "conflict_assertiveness": 0.5,
+            "conflict_cooperativeness": 0.6
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Listens patiently in total stillness, offering no unsolicited advice or judgment, simply holding an unshakeable, steady emotional space until the friend winds down.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.3,
+            "conflict_assertiveness": -0.2,
+            "conflict_cooperativeness": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q04",
+      "scenario": "You are standing in an unusually slow coffee line next to an acquaintance during a quiet morning rush.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Smiles warmly, asks how their week is feeling, and offers sincere words of encouragement to brighten their morning.",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.5,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.5,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Notices an absurdly pretentious seasonal drink on the chalkboard menu and makes a dry, hilarious observation that makes the acquaintance chuckle.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.1,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": -0.2
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Gives a crisp, polite head nod, stands in complete physical stillness without checking their watch, perfectly comfortable holding silent presence.",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.8,
+            "conflict_assertiveness": 0.7,
+            "conflict_cooperativeness": -0.3
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Observes the barista's workflow bottleneck, calculating the order throughput rate, and shares a quick, interesting thought on optimization if spoken to.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.6,
+            "conflict_assertiveness": 0.1,
+            "conflict_cooperativeness": 0.3
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Starts a lively conversation about their favorite roast or an exciting breakfast recipe, spreading infectious morning energy to the line.",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.8,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": 0.7
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Stands with grounded posture and slow breathing, radiates calm patient energy, and offers a quiet, friendly nod that makes the wait feel peaceful.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.2,
+            "conflict_assertiveness": -0.1,
+            "conflict_cooperativeness": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "scenario": "A group vacation chat has been debating destinations for three weeks with zero consensus or booking action.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Posts: 'As long as we're all together laughing and recharging, any spot is perfect! Let's make sure the dates work for Maya since she has work constraints.'",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.5,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.7,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Finds an unconventional, quirky lakehouse rental off the beaten path and pitches it with charm: 'Skip the generic tourist trap; this has a private dock and costs half as much.'",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.1,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": -0.3
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Posts: 'We are locking this down. Destination A, departing on the 12th. Here is the reservation link. Confirm and pay your share by 6 PM today or you are booking separate.'",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.9,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.5
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Builds and shares a side-by-side spreadsheet scoring flight costs, transit times, weather averages, and cancellation policies to make the optimal pick obvious.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.7,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": 0.4
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Floods the chat with stunning travel photos, rooftop sunset vibes, and excitement: 'Guys, imagine the photos and memories! We HAVE to book this now!'",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.8,
+            "conflict_assertiveness": 0.4,
+            "conflict_cooperativeness": 0.6
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Waits until the debate exhausts itself, then calmly texts: 'I've got the camping gear and van ready if anyone wants a quiet, simple retreat. Let me know when you decide.'",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.2,
+            "conflict_assertiveness": 0.0,
+            "conflict_cooperativeness": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q06",
+      "scenario": "You are having a peaceful evening at home when an acquaintance invites you to an impromptu gathering starting in 30 minutes.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Worries that declining might make them feel unsupported or unappreciated, so quickly gets ready with a warm attitude to show up for them.",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.5,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.6,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Weighs the social opportunity: asks who is attending and what the scene is, then decides based on whether it offers interesting conversations or tactical networking.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.0,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": -0.3
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Makes a decisive call in 5 seconds without guilt: 'Not tonight, I'm off the clock. Have a great time,' and puts the phone away.",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.8,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.5
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Evaluates sleep schedule and tomorrow's mental demands; sends a concise text politely declining unless there is a specific, intellectually compelling discussion promised.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.6,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": 0.2
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Instantly catches a burst of spontaneous energy: 'Say no more! Let me get my favorite outfit on!' and arrives ready to elevate the gathering.",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.8,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": 0.7
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Firmly rooted in their personal evening sanctuary, replies with relaxed warmth: 'Thanks for thinking of me, but I am settled in for the night. Catch you soon.'",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.3,
+            "conflict_assertiveness": 0.1,
+            "conflict_cooperativeness": 0.8
+          }
+        }
+      ]
+    }
+  ]
+}

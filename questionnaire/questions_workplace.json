@@ -1,0 +1,438 @@
+{
+  "category": "workplace_and_teams",
+  "category_title": "Workplace & Team Dynamics Scenarios",
+  "questions": [
+    {
+      "id": "Q07",
+      "scenario": "A 30-minute team meeting is completely derailed because two colleagues are aggressively arguing over a minor formatting issue.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Steps in gently with open palms, validates both viewpoints, and offers: 'You both care so much about quality. Let's see if we can combine the best parts of both so everyone feels good.'",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.4,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.6,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Quips with observational wit: 'If we spend another ten minutes on font choices, we'll need to bill hazard pay.' Proposes a clever compromise that bypasses the debate.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.1,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": -0.2
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Clears throat, maintains physical stillness, and speaks with downward inflection: 'Pause. We have ten minutes left and two key deliverables unreviewed. Table this debate. Moving to item three.'",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.9,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.5
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Interjects calmly with data: 'Looking at historical user metrics, the performance delta between these two approaches is 0.2%. Let us look at the primary metric that actually impacts revenue.'",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.7,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": 0.3
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Stands up with animated energy and rallies the room: 'Team, let's step back and remember the huge vision! This launch is going to be spectacular, let's not get stuck in the weeds!'",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.7,
+            "conflict_assertiveness": 0.4,
+            "conflict_cooperativeness": 0.6
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Sits grounded and unshakeable while the room heats up; once the shouting subsides, calmly summarizes the core issue in one sentence and grounds the room in reality.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.2,
+            "conflict_assertiveness": 0.0,
+            "conflict_cooperativeness": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q08",
+      "scenario": "Your manager sends out vague, contradictory directions for a high-priority project deliverable due by Friday afternoon.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Checks in with team members to see how everyone is feeling, ensures panic is calmed, and suggests approaching the manager collaboratively so no one feels isolated.",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.5,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.6,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Reads the political tea leaves to identify what leadership actually cares about, and crafts a clever deliverable that satisfies both interpretations with minimal wasted effort.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.1,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": -0.4
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Contacts the manager immediately with direct clarity: 'Your memo contains contradictory requirements on page two. We are proceeding with Option A unless you direct otherwise by 2 PM.'",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.8,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.4
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Sends a structured, bulleted matrix documenting the contradictions, contingency risks, and three precise clarifying questions to establish an auditable paper trail.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.7,
+            "conflict_assertiveness": 0.1,
+            "conflict_cooperativeness": 0.4
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Calls an impromptu creative session, frames the ambiguity as an exciting opportunity to innovate, and pitches a bold, show-stopping concept that blows past expectations.",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.7,
+            "conflict_assertiveness": 0.4,
+            "conflict_cooperativeness": 0.6
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Stays unshakeable while others panic, holds the team steady, and focuses quietly on building the core foundation that will be necessary regardless of which direction is picked.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.2,
+            "conflict_assertiveness": 0.0,
+            "conflict_cooperativeness": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q09",
+      "scenario": "You are presenting an important proposal when an assertive peer talks over you and tries to commandeer the conversation.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nods warmly, lets them finish their point, then says encouragingly: 'That's a great thought, and it ties right back into the first milestone I was sharing...'",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.4,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.5,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Waits for them to take a breath, raises an amused eyebrow, and quips: 'Thanks for the preview trailer, now back to the feature film,' reclaiming the floor with charm.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.1,
+            "conflict_assertiveness": 0.4,
+            "conflict_cooperativeness": -0.3
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Stops speaking instantly, holds steady unblinking eye contact with complete physical stillness for three seconds until the room falls silent, then continues firmly where they left off.",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.9,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.5
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Waits patiently without emotion, takes a note, and once they pause, states: 'Returning to the logical framework: there are two empirical constraints that must be addressed first.'",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.6,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": 0.3
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Uses expansive gestures and projects a colorful voice to smoothly weave the interruption into their own presentation climax: 'Exactly! And that brings us to the most exciting reveal!'",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.7,
+            "conflict_assertiveness": 0.5,
+            "conflict_cooperativeness": 0.6
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Does not flinch or react; maintains grounded posture, waits out the interruption with quiet strength, then calmly delivers their core point with unshakeable authority.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.2,
+            "conflict_assertiveness": 0.1,
+            "conflict_cooperativeness": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q10",
+      "scenario": "A colleague co-owning a critical client presentation is visibly falling behind on their deliverables and offering excuses.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reaches out privately with deep concern: 'Hey, I noticed you are overwhelmed, are you okay? How can I help take some pressure off your plate?'",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.4,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.6,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Tactfully redistributes the deliverables, shifting them to non-critical tasks with charming diplomacy while ensuring their own contributions are highlighted to leadership.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.0,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": -0.3
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Calls an immediate 10-minute meeting: 'You missed two deadlines. That puts the project at risk. I need slides one through four in my inbox by 5 PM, or I'm escalating to the director.'",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.9,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.5
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Audits the project milestone log, notes the exact workflow blockages, and sends a factual progress report with revised dependency timelines.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.7,
+            "conflict_assertiveness": 0.1,
+            "conflict_cooperativeness": 0.4
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Sets up an energetic work sprint with coffee, plays upbeat music, and attempts to motivate them back into flow through enthusiasm and shared creative momentum.",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.7,
+            "conflict_assertiveness": 0.4,
+            "conflict_cooperativeness": 0.6
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Steadily absorbs the extra workload late into the night without complaining to protect the team's outcome, but establishes a firm, quiet boundary with the peer afterward.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.3,
+            "conflict_assertiveness": 0.1,
+            "conflict_cooperativeness": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q11",
+      "scenario": "During an all-hands review, your team's project receives blunt, unexpected criticism from a senior executive.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Feels the sting of team tension, but responds with a gracious smile and gratitude: 'Thank you for that feedback; our priority is ensuring the team delivers what truly supports the mission.'",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.4,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.6,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Maintains a calm, untroubled smirk, acknowledges the critique with witty self-awareness ('Fair point, clearly our caffeine hadn't peaked'), and smoothly pivots to a new upside angle.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.1,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": -0.2
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Maintains motionless posture, looks the executive straight in the eye without flinching, and responds with downward finality: 'Understood. We will have the revised execution plan by noon.'",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.9,
+            "conflict_assertiveness": 0.8,
+            "conflict_cooperativeness": -0.4
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Emotionally detaches, viewing the feedback purely as test data, and asks: 'Which specific benchmark variance are you highlighting? Let us verify the dataset.'",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.7,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": 0.3
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Passionately re-articulates the creative core and emotional ambition of the project, defending the team's vision with dramatic flair and high energy.",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.6,
+            "conflict_assertiveness": 0.5,
+            "conflict_cooperativeness": 0.5
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Absorbs the executive's fire like a bedrock wall, showing zero panic or defensiveness; offers a single calm nod, containing the team's anxiety by remaining totally unshakeable.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.2,
+            "conflict_assertiveness": 0.0,
+            "conflict_cooperativeness": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q12",
+      "scenario": "A brand-new, cross-functional company initiative is launching, and team members can volunteer for specific project roles.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Volunteers for team culture, stakeholder engagement, and team well-being to ensure all contributors feel supported and heard throughout the project.",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.5,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.5,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Picks the role of strategic scout or external dealmaker, navigating loose alliances, exploring new opportunities, and working with maximal autonomy.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.1,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": -0.3
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Steps forward immediately to claim project lead and operations driver, setting the schedule, delegating work, and taking full responsibility for results.",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.8,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.5
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Selects systems architecture, data modeling, and risk evaluation, ensuring the initiative is built on verifiable logic and sound methodology.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.7,
+            "conflict_assertiveness": 0.1,
+            "conflict_cooperativeness": 0.4
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Chooses chief evangelist, pitch lead, and external spokesperson to present the team's wins and generate excitement across the organization.",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.8,
+            "conflict_assertiveness": 0.4,
+            "conflict_cooperativeness": 0.6
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Claims the operational foundation and execution backbone, ensuring that critical workflows, team resources, and day-to-day stability remain rock-solid.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.2,
+            "conflict_assertiveness": 0.0,
+            "conflict_cooperativeness": 0.9
+          }
+        }
+      ]
+    }
+  ]
+}

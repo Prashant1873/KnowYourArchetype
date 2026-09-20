@@ -1,0 +1,438 @@
+{
+  "category": "high_stakes_and_crisis",
+  "category_title": "High-Stakes, Crisis & Boundary Dilemmas",
+  "questions": [
+    {
+      "id": "Q13",
+      "scenario": "You and five traveling companions arrive at the airport to find your flight cancelled, 200 angry people in line, and an event you must attend tomorrow morning.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gathers the group, ensures everyone has water, calms the most anxious traveler, and warmly says: 'We are in this together. No matter what, we'll find a solution.'",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.5,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.6,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Skips the 200-person line, immediately calls the airline's overseas support desk with zero queue time, finds an alternate transit route, and smirks: 'Follow me, I found a loophole.'",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.1,
+            "conflict_assertiveness": 0.4,
+            "conflict_cooperativeness": -0.4
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Walks with purposeful stride straight to the duty manager's desk, speaks with downward command, and decisively negotiates priority rebooking for the group while others complain.",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.9,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.5
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Opens live air-traffic apps, analyzes secondary regional airport schedules, bus routes, and car rental inventories, presenting the group with three ranked contingency plans.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.7,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": 0.3
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Rallies everyone's morale with humor and drama: 'This is the plot twist our trip needed!' Snaps a funny group photo and charms the gate agent with radiant enthusiasm.",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.8,
+            "conflict_assertiveness": 0.4,
+            "conflict_cooperativeness": 0.6
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Sits the group down in a quiet spot, guards the luggage, hands out snacks, and stands as an unshakeable fortress of calm, ensuring nobody gets separated or panics.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.3,
+            "conflict_assertiveness": 0.0,
+            "conflict_cooperativeness": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q14",
+      "scenario": "In a crowded meeting, an angry attendee publicly points at you and makes an inaccurate, hostile accusation regarding a failure that was not your fault.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Validates their frustration with empathy: 'I understand why you are so upset. It is painful when things go wrong, and I want to work with you to resolve it.'",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.4,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.6,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Chuckles softly, raises an amused eyebrow, and delivers a clever, disarming retort that exposes the accuser's flawed premise without escalating into a brawl.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.1,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": -0.3
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Fixes them with an unblinking stare, lets a heavy silence hang, and states with low-pitch finality: 'Your statement is factually false. Sit down and let us review the audit trail.'",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.9,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.5
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Pulls up the verified timestamped contract or log on the screen, reading the objective specifications aloud without emotional inflection or defensiveness.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.7,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": 0.3
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Stands up with passionate energy, delivers a charismatic defense of integrity and the project's vision, and turns the audience's emotional allegiance back to their side.",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.6,
+            "conflict_assertiveness": 0.6,
+            "conflict_cooperativeness": 0.5
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Plants feet firmly, broadens shoulders, and absorbs the accusation with complete stoic stillness; waits until the room goes dead silent, then speaks with deep resonance that restores order.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.2,
+            "conflict_assertiveness": 0.1,
+            "conflict_cooperativeness": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q15",
+      "scenario": "An acquaintance persistently pressures you to do an inappropriate personal or professional favor that crosses your ethical or personal boundaries.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Feels guilty saying no, softens the refusal with warm apologies and kind compliments, and offers an alternative small way to assist so they don't feel rejected.",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.4,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.7,
+            "conflict_cooperativeness": 0.8
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Laughs it off with an ironic joke, gives an ambiguous, non-committal answer that leaves the person baffled, and smoothly changes the subject to slip away.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.0,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": -0.4
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Looks them dead in the eye and delivers a flat, unhesitating 'No. That won't happen,' with downward inflection and zero excuses.",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.9,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.5
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Cites the exact governance policy, ethical guidelines, and legal constraints in detached, analytical language that makes debate impossible.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.7,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": 0.3
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Dramatizes their own overwhelming chaos: 'Darling, I wish I could! My schedule is an absolute disaster right now, I can barely keep my head above water!'",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.7,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": 0.5
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Quietly and firmly states: 'I don't do that.' If pressured further, holds an immovable wall of silence and steady eye contact until they back down.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.2,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q16",
+      "scenario": "A sudden fire alarm sounds in a packed conference venue, and confusion starts causing people to panic and push toward a blocked doorway.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Grabs the hand of a frightened stranger, makes warm eye contact to calm them, and guides them step by step toward safety.",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.5,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.4,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Quickly identifies an uncrowded side service exit, slips through effortlessly, and gestures for their immediate companions to follow.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.0,
+            "conflict_assertiveness": 0.4,
+            "conflict_cooperativeness": -0.3
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Steps onto an elevated ledge, projects a resonant commanding voice: 'Stop pushing. Two lines. Exit through the east doors now,' directing the crowd with decisive authority.",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.8,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.4
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Locates the illuminated evacuation diagram, calculates the widest unobstructed exit route, and systematically leads people along the optimal path.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.6,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": 0.4
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Loudly shouts clear instructions with vibrant energy, waving their arms to draw the crowd's focus toward safe exits and cutting through confusion.",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.7,
+            "conflict_assertiveness": 0.5,
+            "conflict_cooperativeness": 0.6
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Acts as a physical bulwark against the surge, standing firm to prevent trampling, and steadily ushers people out with unshakeable calm.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.3,
+            "conflict_assertiveness": 0.2,
+            "conflict_cooperativeness": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q17",
+      "scenario": "At 8 PM, an unexpected system crash threatens to derail a multi-million-dollar midnight launch for your company.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Orders food and coffee for the exhausted engineers, checks on team stress, and reminds everyone that their health and unity matter most.",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.4,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.6,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Engineers a clever temporary workaround that bypasses the broken module, allowing the launch to proceed while buying 48 hours to fix the root bug.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.1,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": -0.3
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Establishes immediate command: 'All side discussions off. Lead engineer on my line. If not patched by 10:30 PM, we roll back. I take full responsibility for the call.'",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.9,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.5
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Pulls runtime diagnostic logs, traces the memory stack, and systematically isolates the failure point without guessing or rushing into blind hotfixes.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.7,
+            "conflict_assertiveness": 0.1,
+            "conflict_cooperativeness": 0.3
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Keeps the war-room energy sky-high, rallies the team with motivational speeches, and prepares an exciting, confident message for executive stakeholders.",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.7,
+            "conflict_assertiveness": 0.4,
+            "conflict_cooperativeness": 0.6
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Sits at their station like an immovable anchor, calmly working through recovery steps, shielding the engineers from executive noise and panic.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.2,
+            "conflict_assertiveness": 0.0,
+            "conflict_cooperativeness": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "Q18",
+      "scenario": "At an informal gathering, an aggressive loudmouth starts publicly mocking and humiliating a quiet, soft-spoken peer.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Steps right in, wraps an arm around the quiet peer, warmly validates them in front of everyone, and gently escorts them away from the hostile environment.",
+          "archetype": "dolphin",
+          "trait_impact": {
+            "energy_presence": 0.5,
+            "warmth_vs_authority": 0.9,
+            "conflict_assertiveness": -0.4,
+            "conflict_cooperativeness": 0.9
+          }
+        },
+        {
+          "letter": "B",
+          "text": "Fires back with a razor-sharp, devastating quip at the loudmouth that turns the entire room's laughter onto the aggressor, instantly neutralizing their attack.",
+          "archetype": "fox",
+          "trait_impact": {
+            "energy_presence": 0.6,
+            "warmth_vs_authority": 0.1,
+            "conflict_assertiveness": 0.4,
+            "conflict_cooperativeness": -0.2
+          }
+        },
+        {
+          "letter": "C",
+          "text": "Steps into the loudmouth's personal space, fixes them with an unblinking, heavy gaze, and says in a low, chilling tone: 'You are done. Walk away right now.'",
+          "archetype": "lion",
+          "trait_impact": {
+            "energy_presence": -0.7,
+            "warmth_vs_authority": -0.9,
+            "conflict_assertiveness": 0.9,
+            "conflict_cooperativeness": -0.4
+          }
+        },
+        {
+          "letter": "D",
+          "text": "Intervenes with clinical detachment, dissecting the loudmouth's insecure posturing in front of the group with calm, humiliating precision.",
+          "archetype": "owl",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": -0.7,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": 0.3
+          }
+        },
+        {
+          "letter": "E",
+          "text": "Loudly interrupts with dramatic outrage, calls out the bullying for everyone to hear, and rallies the room to shower the quiet peer with respect.",
+          "archetype": "peacock",
+          "trait_impact": {
+            "energy_presence": 0.9,
+            "warmth_vs_authority": 0.7,
+            "conflict_assertiveness": 0.6,
+            "conflict_cooperativeness": 0.6
+          }
+        },
+        {
+          "letter": "F",
+          "text": "Steps smoothly between the aggressor and the friend like a solid brick wall, places a heavy calming hand on the friend, and radiates silent, overwhelming physical protection.",
+          "archetype": "bear_wolf",
+          "trait_impact": {
+            "energy_presence": -0.8,
+            "warmth_vs_authority": 0.3,
+            "conflict_assertiveness": 0.3,
+            "conflict_cooperativeness": 0.9
+          }
+        }
+      ]
+    }
+  ]
+}

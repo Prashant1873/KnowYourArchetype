@@ -1,0 +1,128 @@
+{
+  "chunk_id": 4,
+  "chunk_slug": "strengths_blindspots",
+  "chunk_title": "Superpowers, Critical Blindspots & Shadow Sides Across All 6 Archetypes",
+  "sections": [
+    {
+      "title": "Superpowers, Overuse Traps & Psychological Shadow Sides",
+      "bullets": [
+        "The Dolphin delivers unmatched psychological safety and team cohesion as its superpower, but risks boundary erosion, chronic conflict-avoidance, and emotional burnout when its need for harmony prevents honest confrontation [DP-23].",
+        "The Fox delivers brilliant tactical agility and unconventional problem-solving, but risks devolving into perceived opportunism, cynicism, emotional detachment, and hiding behind an ironic mask to evade true vulnerability [DP-24].",
+        "The Lion provides decisive crisis leadership and unwavering vision, but under pressure risks steamrolling dissent, displaying abrasive impatience, and shutting down collaboration through unilateral command [DP-20].",
+        "The Owl contributes rigorous intellectual precision and infallible risk identification, but risks succumbing to analysis paralysis, hyper-critical skepticism, and appearing coldly aloof or unfeeling to emotional peers [DP-22].",
+        "The Peacock provides electrifying inspirational energy and high-voltage charisma, but risks attention-addiction, conversational hijacking, vulnerability to perceived rejection, and neglect of critical logistical follow-through [DP-21].",
+        "The Bear / Wolf provides profound emotional grounding and protective stability, but risks stubborn inertia against needed change, withdrawal into sullen isolation, and explosive delayed retaliation when pushed beyond its threshold [DP-25]."
+      ],
+      "comparative_matrix": {
+        "title": "Cross-Archetype Superpowers & Shadow Sides Matrix",
+        "headers": [
+          "Archetype",
+          "Core Superpower",
+          "Primary Overuse Trap",
+          "Social Fatigue Trigger",
+          "Stress-Induced Shadow Behavior"
+        ],
+        "rows": [
+          [
+            "The Dolphin",
+            "Deep empathy, social cohesion, psychological safety",
+            "Boundary erosion & people-pleasing [DP-23]",
+            "Prolonged interpersonal tension, unreciprocated care",
+            "Passive-aggressive martyrdom, emotional exhaustion"
+          ],
+          [
+            "The Fox",
+            "Tactical agility, unconventional problem-solving, wit",
+            "Calculated manipulation & opportunism [DP-24]",
+            "Rigid bureaucratic rules, repetitive micro-routines",
+            "Cynical detachment, manipulative maneuvering, evasive masking"
+          ],
+          [
+            "The Lion",
+            "Decisive crisis authority, high-stakes clarity, direction",
+            "Steamrolling, impatience, blunt insensitivity [DP-20]",
+            "Indecision, perceived incompetence, slow deliberative pacing",
+            "Autocratic micromanagement, intimidation, explosive blame"
+          ],
+          [
+            "The Owl",
+            "Systemic precision, objective truth-telling, risk insight",
+            "Analysis paralysis, intellectual aloofness [DP-22]",
+            "Emotional drama, illogical arguments, forced social small talk",
+            "Cold dismissal, hyper-critical nitpicking, intellectual arrogance"
+          ],
+          [
+            "The Peacock",
+            "Contagious enthusiasm, theatrical inspiration, stage magnetism",
+            "Conversational hijacking, shiny-object syndrome [DP-21]",
+            "Social obscurity, lack of recognition, repetitive solitary tasks",
+            "Melodramatic victimhood, erratic moodiness, desperate validation seeking"
+          ],
+          [
+            "The Bear / Wolf",
+            "Unshakeable calm, protective containment, loyal grounding",
+            "Stubborn inertia, tribal defensiveness [DP-25]",
+            "Constant chaotic unpredictability, boundary intrusions",
+            "Sullen withdrawal / hibernation, explosive boundary enforcement"
+          ]
+        ]
+      },
+      "data_points": [
+        {
+          "data_point": "Lions excel in decisive goal-oriented leadership but risk becoming demanding, impatient, and insensitive under pressure",
+          "exact_url": "https://48days.com",
+          "quoted_text": "Strengths: Confident, decisive, goal-oriented, and natural leaders. They are excellent at taking charge and making quick decisions. Weaknesses: Can be perceived as demanding, impatient, or overly blunt. They may struggle to listen to others.",
+          "verification_query": "\"Lion\" \"Strengths: Confident, decisive, goal-oriented\" \"demanding, impatient, or overly blunt\"",
+          "grep_result": "Confident, decisive, goal-oriented, and natural leaders... Can be perceived as demanding, impatient, or overly blunt. They may struggle to listen to others",
+          "confidence_score": "Highest",
+          "triangulation_status": "Flag as Triangulated"
+        },
+        {
+          "data_point": "Peacocks provide visionary inspiration and social magnetism but struggle with detailed follow-through and emotional over-reaction",
+          "exact_url": "https://48days.com",
+          "quoted_text": "Strengths: Energetic, charismatic, fun-loving, and visionary. They excel at social interaction, networking, and inspiring others. Weaknesses: May struggle with follow-through or attention to detail ('shiny-object syndrome'). They can become overly dramatic or emotional under stress.",
+          "verification_query": "\"Peacock\" OR \"Otter\" \"shiny-object syndrome\" \"overly dramatic or emotional under stress\"",
+          "grep_result": "excel at social interaction, networking, and inspiring others... May struggle with follow-through or attention to detail ('shiny-object syndrome')... overly dramatic or emotional under stress",
+          "confidence_score": "Highest",
+          "triangulation_status": "Flag as Triangulated"
+        },
+        {
+          "data_point": "Owls deliver rigorous precision and risk analysis but suffer from analysis paralysis and interpersonal detachment",
+          "exact_url": "https://48days.com",
+          "quoted_text": "Strengths: Detail-oriented, analytical, systematic, and precise. They excel at planning, data analysis, and ensuring high-quality standards. Weaknesses: Can become 'paralyzed' by over-analyzing facts or be perceived as overly critical or detached.",
+          "verification_query": "\"Owl\" \"paralyzed by over-analyzing facts\" OR \"overly critical or detached\"",
+          "grep_result": "Detail-oriented, analytical, systematic, and precise... Can become 'paralyzed' by over-analyzing facts or be perceived as overly critical or detached",
+          "confidence_score": "Highest",
+          "triangulation_status": "Flag as Triangulated"
+        },
+        {
+          "data_point": "Dolphins maintain deep relational harmony and safety but are vulnerable to boundary loss and conflict-avoidance burnout",
+          "exact_url": "https://48days.com",
+          "quoted_text": "Loyal, patient, empathetic, and reliable. They are exceptional team players who excel at supporting others and maintaining harmony. Weaknesses: Often conflict-averse and may avoid standing up for themselves.",
+          "verification_query": "\"conflict-averse and may avoid standing up for themselves\" \"maintaining harmony\"",
+          "grep_result": "exceptional team players who excel at supporting others and maintaining harmony... Often conflict-averse and may avoid standing up for themselves",
+          "confidence_score": "Highest",
+          "triangulation_status": "Flag as Triangulated"
+        },
+        {
+          "data_point": "Foxes utilize strategic wit and adaptive survival but risk devolving into calculated manipulation, opportunism, and guarded masking",
+          "exact_url": "https://spiritanimalatlas.com",
+          "quoted_text": "Manipulation vs. Persuasion: The fox's natural talent for reading and influencing others can devolve into calculated manipulation... Opportunism: a tendency to 'take' from situations... Guardedness and Isolation: keeping every plan hidden and every emotion behind a 'mask', preventing genuine connection to avoid being vulnerable.",
+          "verification_query": "\"The fox's natural talent for reading and influencing others can devolve into calculated manipulation\" OR \"keeping every plan hidden and every emotion behind a mask\"",
+          "grep_result": "natural talent for reading and influencing others can devolve into calculated manipulation... Opportunism... keeping every plan hidden and every emotion behind a mask",
+          "confidence_score": "Highest",
+          "triangulation_status": "Flag as Triangulated"
+        },
+        {
+          "data_point": "Bear and Wolf archetypes offer unyielding grounding and loyalty but exhibit stubborn resistance to change and explosive boundary retaliation",
+          "exact_url": "https://spiritanimalatlas.com",
+          "quoted_text": "Bear personalities are the 'rock' in their social circles... but prefer sustained deep work over multitasking and can exhibit defensive boundaries: when pushed, they exhibit an immovable resolve, ensuring that they protect their territory or principles without conceding ground.",
+          "verification_query": "\"Bear personalities are the rock in their social circles\" OR \"immovable resolve, ensuring that they protect their territory\"",
+          "grep_result": "Bear personality is widely recognized as an archetype of steadiness, grounding, and protective strength... when pushed, they exhibit an immovable resolve",
+          "confidence_score": "Highest",
+          "triangulation_status": "Flag as Triangulated"
+        }
+      ]
+    }
+  ]
+}

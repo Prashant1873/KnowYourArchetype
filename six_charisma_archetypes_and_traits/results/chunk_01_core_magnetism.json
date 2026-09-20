@@ -1,0 +1,138 @@
+{
+  "chunk_id": 1,
+  "chunk_slug": "core_magnetism",
+  "chunk_title": "Core Magnetism & Psychological Drivers Across All 6 Archetypes",
+  "sections": [
+    {
+      "title": "Core Psychological Drivers & Magnetism Engines",
+      "bullets": [
+        "The Dolphin operates on an Affiliative Magnetism engine driven by relational harmony, deep empathy, and communal belonging, drawing people in through warmth and unconditional social inclusion [DP-1].",
+        "The Fox operates on a Tactical Magnetism engine driven by autonomy, unconventional agility, and rapid problem-solving, attracting others through cleverness, wit, and unpredictable adaptability [DP-2].",
+        "The Lion operates on an Authoritative Magnetism engine driven by outcome mastery, high status, and decisive command, capturing attention through unflinching confidence and goal-oriented dominance [DP-3].",
+        "The Owl operates on an Intellectual Magnetism engine driven by rational clarity, systemic precision, and deep discernment, commanding respect through intense, deliberate analysis and objective wisdom [DP-4].",
+        "The Peacock operates on an Expressive Magnetism engine driven by recognition, theatrical passion, and high social optimism, commanding the center of attention through contagious enthusiasm and vibrant drama [DP-5].",
+        "The Bear operates on a Grounded Anchor Magnetism engine driven by protective stability, emotional containment, and unshakeable calm, making others feel profoundly secure in high-stress environments [DP-6].",
+        "The Wolf operates on an Intuitive Guardian Magnetism engine driven by pack loyalty, perceptive vigilance, and instinct-led authority, exerting magnetic pull through quiet mystery and fierce fidelity [DP-7]."
+      ],
+      "comparative_matrix": {
+        "title": "Cross-Archetype Magnetism & Psychological Drivers Benchmark",
+        "headers": [
+          "Archetype",
+          "Primary Psychological Driver",
+          "Magnetism Engine",
+          "Warmth vs Authority Balance",
+          "Baseline Energy Profile"
+        ],
+        "rows": [
+          [
+            "The Dolphin",
+            "Relational Harmony & Connection",
+            "Affiliative / Empathetic Warmth",
+            "High Warmth / Low-to-Moderate Authority",
+            "Buoyant, fluid, emotionally radiant [DP-1]"
+          ],
+          [
+            "The Fox",
+            "Autonomy & Tactical Agility",
+            "Witty / Unconventional Intellect",
+            "Moderate Warmth / Lateral Status",
+            "Quick-paced, alert, opportunistic [DP-2]"
+          ],
+          [
+            "The Lion",
+            "Outcome Mastery & Decisive Control",
+            "Commanding / Direct Leadership",
+            "High Authority / Low-to-Moderate Warmth",
+            "Projective, intense, centered [DP-3]"
+          ],
+          [
+            "The Owl",
+            "Rational Precision & Understanding",
+            "Intellectual / Perceptive Depth",
+            "High Competence / Low Expressive Warmth",
+            "Still, deliberate, cerebral [DP-4]"
+          ],
+          [
+            "The Peacock",
+            "Social Recognition & Creative Impact",
+            "Theatrical / High-Voltage Inspiration",
+            "High Warmth & High Expressive Presence",
+            "Exuberant, radiant, spotlight-seeking [DP-5]"
+          ],
+          [
+            "The Bear / Wolf",
+            "Protective Stability & Pack Loyalty",
+            "Grounded Anchor / Instinctive Vigilance",
+            "Quiet Authority / High Underlying Safety",
+            "Unshakeable, steady, slow-pulse containment [DP-6, DP-7]"
+          ]
+        ]
+      },
+      "data_points": [
+        {
+          "data_point": "Dolphins are characterized as sensitive, empathetic souls driven by harmony and reassurance",
+          "exact_url": "https://salespodder.com/beavers-foxes-dolphins-owls/",
+          "quoted_text": "Dolphins – sensitive, empathetic souls who like constant reassurance... Blue/Harmonious/Idealist",
+          "verification_query": "\"sensitive, empathetic souls who like constant reassurance\"",
+          "grep_result": "Dolphins are characterized as 'sensitive, empathetic souls who like constant reassurance' and associated with harmonious idealism",
+          "confidence_score": "Highest",
+          "triangulation_status": "Flag as Triangulated"
+        },
+        {
+          "data_point": "Foxes are independent, fearless types driven by adventure and pragmatic artisan agility",
+          "exact_url": "https://salespodder.com/beavers-foxes-dolphins-owls/",
+          "quoted_text": "Foxes – independent, fearless types... Orange/Adventurous/Artisan",
+          "verification_query": "\"Foxes – independent, fearless types\" OR \"Foxes - independent, fearless types\"",
+          "grep_result": "Foxes – independent, fearless types... Orange/Adventurous/Artisan",
+          "confidence_score": "Highest",
+          "triangulation_status": "Flag as Triangulated"
+        },
+        {
+          "data_point": "Lions are decisive, assertive, natural leaders driven by goal attainment and direct authority",
+          "exact_url": "https://tipsofwisdom.com",
+          "quoted_text": "The Lion personality is decisive, assertive, and natural leaders... highly focused on objectives and outcomes... comfortable in positions of authority",
+          "verification_query": "\"Lion\" personality \"decisive\" \"assertive\" OR \"natural leaders\" \"goal-oriented\"",
+          "grep_result": "The Lion personality is a widely recognized archetype described as decisive, assertive, and natural leaders... comfortable in positions of authority",
+          "confidence_score": "Highest",
+          "triangulation_status": "Flag as Triangulated"
+        },
+        {
+          "data_point": "Owls are intense, deliberate, and analytical thinkers driven by rational clarity and curiosity",
+          "exact_url": "https://salespodder.com/beavers-foxes-dolphins-owls/",
+          "quoted_text": "Owls – who tend to be intense, deliberate and very analytical... Green/Curious/Rational",
+          "verification_query": "\"Owls – who tend to be intense, deliberate and very analytical\"",
+          "grep_result": "Owls – who tend to be intense, deliberate and very analytical... Green/Curious/Rational",
+          "confidence_score": "Highest",
+          "triangulation_status": "Flag as Triangulated"
+        },
+        {
+          "data_point": "Peacocks thrive in social situations, actively seeking the center of attention through enthusiasm and optimism",
+          "exact_url": "https://richardstep.com",
+          "quoted_text": "Peacocks thrive in social situations and actively seek to be the center of attention... high energy, wealth of passion, and generally positive, optimistic outlook",
+          "verification_query": "\"Peacocks thrive in social situations and actively seek to be the center of attention\"",
+          "grep_result": "Peacocks thrive in social situations and actively seek to be the center of attention... high-energy, enthusiastic, optimistic",
+          "confidence_score": "Highest",
+          "triangulation_status": "Flag as Triangulated"
+        },
+        {
+          "data_point": "Bear personalities project an unshakeable calm and protective strength that stabilizes groups in crisis",
+          "exact_url": "https://jobcannon.io",
+          "quoted_text": "Bear personality is widely recognized as an archetype of steadiness, grounding, and protective strength... unshakeable calm",
+          "verification_query": "\"Bear personality\" \"calm\" \"protective\" OR \"grounded\" \"steady\" OR \"crisis\"",
+          "grep_result": "The Bear personality is widely recognized as an archetype of steadiness, grounding, and protective strength... unshakeable calm",
+          "confidence_score": "Highest",
+          "triangulation_status": "Flag as Triangulated"
+        },
+        {
+          "data_point": "Wolf personalities exert influence through instinct, perceptive observation, and fierce pack loyalty",
+          "exact_url": "https://jobcannon.io",
+          "quoted_text": "The wolf is widely recognized as a powerful symbol of loyalty, teamwork, instinct, and leadership... highly observant",
+          "verification_query": "\"Wolf personality\" \"loyalty\" \"pack\" \"instinct\" \"leadership\" OR \"observant\"",
+          "grep_result": "The wolf is widely recognized as a powerful symbol of loyalty, teamwork, instinct, and leadership... highly observant",
+          "confidence_score": "Highest",
+          "triangulation_status": "Flag as Triangulated"
+        }
+      ]
+    }
+  ]
+}

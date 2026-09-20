@@ -1,0 +1,34 @@
+topic: "Six Charisma Archetypes: Detailed Traits Across All Dimensions"
+slug: "six_charisma_archetypes_and_traits"
+created_at: "2026-09-20"
+description: "Empirical deep research into the behavioral traits of all 6 charisma archetypes (Dolphin, Fox, Lion, Owl, Peacock, Bear/Wolf), organized by cross-cutting trait dimensions rather than isolated archetypes."
+requires_comparative_matrix: true
+chunks:
+  - id: 1
+    slug: "core_magnetism"
+    title: "Core Magnetism & Psychological Drivers Across All 6 Archetypes"
+    focus_areas:
+      - "Primary psychological drives and attraction mechanisms for all 6 archetypes"
+      - "Warmth vs Authority positioning (Dolphin/Bear vs Lion/Owl vs Fox/Peacock)"
+      - "Baseline social gravitas and energy output across all archetypes"
+  - id: 2
+    slug: "presence_vocalics"
+    title: "Physical Presence, Body Language & Vocal Mechanics Across All 6 Archetypes"
+    focus_areas:
+      - "Non-verbal cues, eye contact, spatial ownership, and movement dynamics for all 6 archetypes"
+      - "Vocal tonality, pitch variation, cadence, tempo, and pause utilization for all 6 archetypes"
+      - "Stillness vs kinetic energy profiles across the archetypes"
+  - id: 3
+    slug: "conversational_playbook"
+    title: "Conversational Playbook & Status Dynamics Across All 6 Archetypes"
+    focus_areas:
+      - "Dialogue mechanics: small talk, active listening, storytelling, and humor/wit across all 6 archetypes"
+      - "Status negotiation, boundary setting, and conflict/disagreement handling across all 6 archetypes"
+      - "Frame control strategies used by each archetype in group and 1-on-1 contexts"
+  - id: 4
+    slug: "strengths_blindspots"
+    title: "Superpowers, Critical Blindspots & Shadow Sides Across All 6 Archetypes"
+    focus_areas:
+      - "Highest-leverage strengths and unique social value delivered by each archetype"
+      - "Overuse risks, social fatigue triggers, and stress-induced behavioral traps for each archetype"
+      - "Shadow sides, vulnerabilities, and relational friction points across the 6 archetypes"

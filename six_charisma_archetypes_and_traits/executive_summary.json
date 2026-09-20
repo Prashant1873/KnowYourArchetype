@@ -1,0 +1,92 @@
+{
+  "executive_summary": [
+    "Charisma operates not as a single monolithic trait, but across six distinct behavioral archetypes: The Dolphin, The Fox, The Lion, The Owl, The Peacock, and The Bear / Wolf, each driven by a distinct psychological motor and non-verbal presence [DP-1, DP-2, DP-3, DP-4, DP-5, DP-6].",
+    "The Warmth versus Authority dichotomy bifurcates the six styles: Affiliative types (Dolphin, Peacock) project high warmth and social inclusion via open palms, head tilts, and dynamic pitch variation, whereas Status types (Lion, Owl) project authority via downward inflections, deliberate pauses, and radical physical stillness [DP-8, DP-9, DP-10].",
+    "Conversational playbooks differ systematically: The Lion commands through outcome-focused 'Reader's Digest' brevity; the Owl anchors in empirical reality-testing and precise 'why/how' inquiry; the Dolphin builds emotional consensus; the Fox maneuvers through lateral reframing and observational wit; the Peacock electrifies via theatrical narrative; and the Bear/Wolf holds a low-reactivity container that de-escalates hostility [DP-14, DP-15, DP-16, DP-17, DP-18, DP-19].",
+    "Every archetype possesses a distinct failure mode under stress: The Dolphin risks boundary erosion and people-pleasing burnout; the Fox risks perceived manipulation and cynical masking; the Lion risks authoritarian steamrolling; the Owl risks paralyzing cynicism and emotional aloofness; the Peacock risks narcissistic spotlight addiction; and the Bear/Wolf risks stubborn passive inertia [DP-20, DP-21, DP-22, DP-23, DP-24, DP-25]."
+  ],
+  "so_what": [
+    "Strategic Interpersonal Calibration: Recognizing that charisma is multimodal allows leaders, negotiators, and communicators to deliberately shift between archetypal modes rather than relying solely on default instincts.",
+    "Complementary Team Assembly: High-performing teams require archetypal balance; pairing an ideating Peacock with an analytical Owl, or a driving Lion with a harmonizing Dolphin, prevents monoculture blindspots.",
+    "Stress Inoculation & Shadow Mitigation: Awareness of each archetype's specific shadow triggers (e.g. Lion under time pressure, Dolphin facing conflict, Owl facing emotional ambiguity) provides concrete early-warning indicators to halt behavioral derailment.",
+    "Targeted Influence & Mirroring: Effective persuasion requires matching the counterpart's processing framework—delivering bottom-line summaries to Lions, data-backed logic to Owls, relational reassurance to Dolphins, witty agility to Foxes, and appreciative validation to Peacocks."
+  ],
+  "comparative_matrices": [
+    {
+      "title": "Comprehensive 6-Archetype Behavioral & Trait Benchmark",
+      "description": "Cross-archetype comparative analysis mapping psychological drivers, presence mechanics, conversational frames, and shadow sides.",
+      "headers": [
+        "Archetype",
+        "Primary Drive & Engine",
+        "Warmth vs Authority",
+        "Dominant Non-Verbal Signature",
+        "Vocalics & Cadence",
+        "Conversational Strategy",
+        "Core Superpower",
+        "Fatal Flaw / Shadow Trap"
+      ],
+      "rows": [
+        [
+          "The Dolphin",
+          "Relational harmony, empathy, inclusion [DP-1]",
+          "High Warmth / Moderate Authority",
+          "Open palms, head tilting, Duchenne smiles [DP-8]",
+          "Musical, upward inflections, warm pacing [DP-8]",
+          "Emotional consensus, active listening, validation [DP-16]",
+          "Psychological safety & social cohesion [DP-23]",
+          "Boundary erosion & conflict-avoidance burnout [DP-23]"
+        ],
+        [
+          "The Fox",
+          "Tactical agility, autonomy, creative wit [DP-2]",
+          "Moderate Warmth / Lateral Status",
+          "Alert posture, agile fluid gestures, micro-expressions [DP-12]",
+          "Rapid-tempo, sharp pitch shifts, witty satire [DP-12]",
+          "Lateral reframing, playful banter, disarming diplomacy [DP-17]",
+          "Unconventional problem-solving & navigation [DP-24]",
+          "Calculated manipulation, opportunism & masking [DP-24]"
+        ],
+        [
+          "The Lion",
+          "Outcome mastery, decisive command [DP-3]",
+          "High Authority / Low Warmth",
+          "Radical stillness, unblinking gaze, expansive chest [DP-9]",
+          "Downward inflections, resonant, declarative cadence [DP-9]",
+          "Reader's Digest brevity, bottom-line agenda setting [DP-14]",
+          "Crisis leadership & bold decisive direction [DP-20]",
+          "Steamrolling, abrasive impatience & autocracy [DP-20]"
+        ],
+        [
+          "The Owl",
+          "Systemic precision, rational clarity [DP-4]",
+          "High Competence / Low Warmth",
+          "Neutral composure, laser focus, minimal movement [DP-10]",
+          "Measured low-variance pitch, strategic deliberate pauses [DP-10]",
+          "Socratic why/how inquiry, objective truth-testing [DP-15]",
+          "Risk identification & deep analytical rigor [DP-22]",
+          "Analysis paralysis, aloofness & hyper-criticism [DP-22]"
+        ],
+        [
+          "The Peacock",
+          "Recognition, theatrical inspiration [DP-5]",
+          "High Warmth / High Expressive Status",
+          "Sweeping gestures, animated facial expressions [DP-11]",
+          "Strong, colorful projection, dynamic volume [DP-11]",
+          "Dramatic storytelling, emotional elevation, spotlight hooks [DP-18]",
+          "Contagious enthusiasm & inspirational magnetism [DP-21]",
+          "Shiny-object syndrome & validation addiction [DP-21]"
+        ],
+        [
+          "The Bear / Wolf",
+          "Protective stability, pack loyalty [DP-6, DP-7]",
+          "Quiet Authority / High Safety",
+          "Rooted grounding, dropped shoulders, watchful calm [DP-13]",
+          "Deep chest timbre, unhurried cadence, comfortable silence [DP-13]",
+          "Low-reactivity containment, de-escalating patience [DP-19]",
+          "Unshakeable calm & unwavering group defense [DP-25]",
+          "Stubborn inertia & explosive boundary retaliation [DP-25]"
+        ]
+      ]
+    }
+  ]
+}

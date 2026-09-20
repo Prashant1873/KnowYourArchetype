@@ -1,0 +1,68 @@
+================================================================================
+SHERLOCK EMPIRICAL RESEARCH CHARTER & PLAN (REVISED)
+Topic: Six Charisma Archetypes and Their Detailed Behavioral Traits
+Slug: six_charisma_archetypes_and_traits
+Date: 2026-09-20
+================================================================================
+
+1. RESEARCH CHARTER & OBJECTIVE
+Conduct deep empirical secondary research on the 6 primary charisma archetypes:
+Dolphin, Fox, Lion, Owl, Peacock, and Bear / Wolf.
+Per explicit user mandates:
+- ZERO historical background, academic lineages, or origin narratives.
+- Deep, granular exploration of behavioral traits and social mechanisms.
+- Broadened MECE architecture: Sub-questions and research chunks analyze specific
+  trait dimensions across ALL 6 archetypes simultaneously, rather than siloing
+  one or two archetypes per question.
+- Final deliverables must include a comprehensive plain text (.txt) export
+  alongside standard analytical deliverables (.xlsx, .csv, .docx).
+
+2. TARGET ENTITIES (THE 6 CHARISMA ARCHETYPES)
+Across all research questions and chunks, every finding is mapped across all 6:
+1. The Dolphin (Affiliative, Warm, Collaborative Connector)
+2. The Fox (Adaptive, Strategic, Quick-Witted Problem-Solver)
+3. The Lion (Commanding, Decisive, High-Status Authority)
+4. The Owl (Observant, Rational, Quiet Wisdom / Intellectual)
+5. The Peacock (Expressive, Vibrant, Magnetic Spotlight Entertainer)
+6. The Bear / Wolf (Grounded, Steady, Protective Anchor)
+
+3. BROADENED MECE RESEARCH SUB-QUESTIONS (ALL TRAITS FOR ALL ARCHETYPES)
+- MECE Sub-Q 1: Core Magnetism & Psychological Drivers
+  What is the core internal engine, psychological motivator, and baseline social
+  gravitational pull for each of the 6 archetypes? How does each attract and hold attention?
+- MECE Sub-Q 2: Physical Presence, Body Language & Vocal Mechanics
+  What are the precise non-verbal cues (posture, kinetic movement vs stillness,
+  eye contact, spatial dominance) and vocal dynamics (pitch, tempo, cadence, inflection,
+  silence utilization) exhibited by each of the 6 archetypes?
+- MECE Sub-Q 3: Conversational Playbook & Frame Dynamics
+  How does each of the 6 archetypes handle interpersonal dialogue: small talk, active
+  listening, humor/banter, storytelling, confrontation/conflict, and status negotiation?
+- MECE Sub-Q 4: Superpowers, Critical Blindspots & Shadow Sides
+  What are the highest-leverage strengths of each archetype, what happens when their
+  traits are overused, and what are their specific failure modes or social vulnerabilities
+  under high stress?
+
+4. COMPARATIVE MATRIX REQUIREMENTS
+- Explicitly required across all 6 archetypes:
+  * Trait Dimension Matrix: Core Drive, Energy Level, Warmth vs Authority Rating,
+    Vocal Cadence, Dominant Non-Verbal, Primary Conversational Weapon.
+  * Risk Matrix: Overuse Trap, Social Fatigue Factor, Counter-Archetype Clash.
+
+5. CHUNK DECOMPOSITION ROADMAP
+- Chunk 1: Core Magnetism & Psychological Drivers (All 6 Archetypes)
+- Chunk 2: Physical Presence, Body Language & Vocal Mechanics (All 6 Archetypes)
+- Chunk 3: Conversational Playbook & Frame Dynamics (All 6 Archetypes)
+- Chunk 4: Superpowers, Critical Blindspots & Shadow Sides (All 6 Archetypes)
+
+6. DELIVERABLE SPECIFICATIONS
+- results/chunk_01_core_magnetism.json
+- results/chunk_02_presence_vocalics.json
+- results/chunk_03_conversational_playbook.json
+- results/chunk_04_strengths_blindspots.json
+- executive_summary.json (Cross-Archetype Synthesis, So What implications, Comparative Matrix)
+- Exported Reports:
+  * six_charisma_archetypes_and_traits_report.xlsx
+  * six_charisma_archetypes_and_traits_report.csv
+  * six_charisma_archetypes_and_traits_report.docx
+  * six_charisma_archetypes_and_traits.txt (Exhaustive plain-text compilation)
+================================================================================

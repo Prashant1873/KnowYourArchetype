@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <defs>
+    <!-- Radial Ambient Luminous Aura -->
+    <radialGradient id="prism-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.32" />
+      <stop offset="45%" stop-color="#D946EF" stop-opacity="0.12" />
+      <stop offset="75%" stop-color="#06B6D4" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Calibrated 6 Archetype Facet Gradients -->
+    <!-- 1. The Lion: Top-Right (Regal Amber Gold) -->
+    <linearGradient id="grad-lion" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="40%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+
+    <!-- 2. The Fox: Right (Strategic Tangerine / Copper) -->
+    <linearGradient id="grad-fox" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDBA74" />
+      <stop offset="50%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#C2410C" />
+    </linearGradient>
+
+    <!-- 3. The Peacock: Bottom-Right (Magnetic Magenta / Fuchsia) -->
+    <linearGradient id="grad-peacock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6" />
+      <stop offset="50%" stop-color="#D946EF" />
+      <stop offset="100%" stop-color="#9333EA" />
+    </linearGradient>
+
+    <!-- 4. The Owl: Bottom-Left (Deep Indigo / Violet) -->
+    <linearGradient id="grad-owl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A5B4FC" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#3730A3" />
+    </linearGradient>
+
+    <!-- 5. The Dolphin: Left (Affiliative Azure Cyan) -->
+    <linearGradient id="grad-dolphin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67E8F9" />
+      <stop offset="50%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#0E7490" />
+    </linearGradient>
+
+    <!-- 6. The Bear / Wolf: Top-Left (Grounded Emerald Jade) -->
+    <linearGradient id="grad-bear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6EE7B7" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <!-- Central Core Glow -->
+    <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#FEF3C7" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </radialGradient>
+
+    <!-- Subtle Drop Shadow Filter for Facet Depth -->
+    <filter id="subtle-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Central Radial Glow Backdrop -->
+  <circle cx="256" cy="256" r="236" fill="url(#prism-glow)" />
+
+  <!-- Sacred Geometry Outer Orbital Concentric Rings -->
+  <!-- Outer Dashed Orbital Track -->
+  <circle cx="256" cy="256" r="218" stroke="#94A3B8" stroke-width="1.8" stroke-dasharray="6 8" opacity="0.45" />
+  <circle cx="256" cy="256" r="188" stroke="#CBD5E1" stroke-width="1.4" opacity="0.3" />
+
+  <!-- 6 Orbit Accent Nodes marking the Archetype Axes -->
+  <!-- Lion (30 deg: 256 + 218*cos(-60)=365, 256 + 218*sin(-60)=67) -->
+  <circle cx="365" cy="67" r="4.5" fill="#F59E0B" opacity="0.9" />
+  <!-- Fox (0 deg: 256 + 218 = 474, 256) -->
+  <circle cx="474" cy="256" r="4.5" fill="#F97316" opacity="0.9" />
+  <!-- Peacock (300 deg: 365, 445) -->
+  <circle cx="365" cy="445" r="4.5" fill="#D946EF" opacity="0.9" />
+  <!-- Owl (240 deg: 147, 445) -->
+  <circle cx="147" cy="445" r="4.5" fill="#6366F1" opacity="0.9" />
+  <!-- Dolphin (180 deg: 38, 256) -->
+  <circle cx="38" cy="256" r="4.5" fill="#06B6D4" opacity="0.9" />
+  <!-- Bear / Wolf (120 deg: 147, 67) -->
+  <circle cx="147" cy="67" r="4.5" fill="#10B981" opacity="0.9" />
+
+  <!-- Main Hexagonal Prism Lens (R = 156) centered at (256, 256) -->
+  <g filter="url(#subtle-shadow)">
+    <!-- 1. The Lion: Top-Right Facet (V0 -> V1 -> C) -->
+    <path d="M 256,100 L 391,178 L 256,256 Z" fill="url(#grad-lion)" />
+
+    <!-- 2. The Fox: Right Facet (V1 -> V2 -> C) -->
+    <path d="M 391,178 L 391,334 L 256,256 Z" fill="url(#grad-fox)" />
+
+    <!-- 3. The Peacock: Bottom-Right Facet (V2 -> V3 -> C) -->
+    <path d="M 391,334 L 256,412 L 256,256 Z" fill="url(#grad-peacock)" />
+
+    <!-- 4. The Owl: Bottom-Left Facet (V3 -> V4 -> C) -->
+    <path d="M 256,412 L 121,334 L 256,256 Z" fill="url(#grad-owl)" />
+
+    <!-- 5. The Dolphin: Left Facet (V4 -> V5 -> C) -->
+    <path d="M 121,334 L 121,178 L 256,256 Z" fill="url(#grad-dolphin)" />
+
+    <!-- 6. The Bear / Wolf: Top-Left Facet (V5 -> V0 -> C) -->
+    <path d="M 121,178 L 256,100 L 256,256 Z" fill="url(#grad-bear)" />
+  </g>
+
+  <!-- Sacred Hexagram Overlapping Tension Lines (Star of David Prism Lattice) -->
+  <polygon points="256,412 391,178 121,178" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.65" />
+  <polygon points="256,100 391,334 121,334" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.65" />
+
+  <!-- Radiating Inter-Facet Refraction Beams -->
+  <line x1="256" y1="100" x2="256" y2="412" stroke="#FFFFFF" stroke-width="1.8" opacity="0.45" />
+  <line x1="121" y1="178" x2="391" y2="334" stroke="#FFFFFF" stroke-width="1.8" opacity="0.45" />
+  <line x1="121" y1="334" x2="391" y2="178" stroke="#FFFFFF" stroke-width="1.8" opacity="0.45" />
+
+  <!-- Outer Facet Chamfer Highlight Borders -->
+  <polygon points="256,100 391,178 391,334 256,412 121,334 121,178" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.35" />
+
+  <!-- The Synthesized Charisma Focal Core -->
+  <!-- Outer Luminous Halo -->
+  <circle cx="256" cy="256" r="48" fill="none" stroke="#F59E0B" stroke-width="2.5" opacity="0.75" stroke-dasharray="4 4" />
+  
+  <!-- Gold Corona Ring -->
+  <circle cx="256" cy="256" r="32" fill="none" stroke="#F59E0B" stroke-width="3" opacity="0.9" />
+
+  <!-- Inner Diamond Refractor -->
+  <polygon points="256,236 276,256 256,276 236,256" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.8" />
+
+  <!-- Central Brilliant White Core -->
+  <circle cx="256" cy="256" r="20" fill="url(#core-glow)" stroke="#FFFFFF" stroke-width="2.5" />
+  <circle cx="256" cy="256" r="8" fill="#FFFFFF" />
+</svg>
