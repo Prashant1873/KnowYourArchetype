@@ -156,12 +156,101 @@
           </svg>
         </button>
 
-        <p class="hero-meta-note">Takes ~3 minutes &bull; Leave name blank to stay anonymous &bull; Keyboard shortcuts (A–F)</p>
+        <p class="hero-meta-note">Takes 2–7 min depending on length &bull; Leave name blank to stay anonymous &bull; Keyboard shortcuts (A–F)</p>
 
       </div>
     </section>
 
-    <!-- SCREEN 2: QUESTION WIZARD -->
+    <!-- SCREEN 2: ONBOARDING / INSTRUCTIONS -->
+    <section id="screen-onboarding" class="view-screen" aria-hidden="true">
+      <div class="onboarding-card">
+
+        <div class="onboarding-header">
+          <div class="onboarding-icon">🧭</div>
+          <h2 class="onboarding-title">Set Up Your Assessment</h2>
+          <p class="onboarding-subtitle">Choose how long and which scenarios fit your life best. We'll tailor the questions to match.</p>
+        </div>
+
+        <!-- Length Selector -->
+        <div class="onboarding-section">
+          <div class="onboarding-section-label">How long do you want the assessment?</div>
+          <div class="length-selector" role="group" aria-label="Assessment Length">
+
+            <button class="length-option" id="len-short" data-length="short" type="button" aria-pressed="false">
+              <div class="length-option-top">
+                <span class="length-icon">⚡</span>
+                <span class="length-badge">~2 min</span>
+              </div>
+              <div class="length-label">Short</div>
+              <div class="length-count">6 scenarios</div>
+            </button>
+
+            <button class="length-option selected" id="len-medium" data-length="medium" type="button" aria-pressed="true">
+              <div class="length-option-top">
+                <span class="length-icon">🎯</span>
+                <span class="length-badge">~4 min</span>
+              </div>
+              <div class="length-label">Medium</div>
+              <div class="length-count">12 scenarios</div>
+            </button>
+
+            <button class="length-option" id="len-long" data-length="long" type="button" aria-pressed="false">
+              <div class="length-option-top">
+                <span class="length-icon">🔬</span>
+                <span class="length-badge">~7 min</span>
+              </div>
+              <div class="length-label">Long</div>
+              <div class="length-count">18 scenarios</div>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Context Selector -->
+        <div class="onboarding-section">
+          <div class="onboarding-section-label">Which describes you best right now?</div>
+          <p class="onboarding-context-note">We'll swap in scenarios from your world — campus life or workplace dynamics — for more relevant results.</p>
+          <div class="context-selector" role="group" aria-label="Life Context">
+            <button class="context-option" id="ctx-student" data-context="student" type="button" aria-pressed="false">
+              🎓 Student
+            </button>
+            <button class="context-option selected" id="ctx-professional" data-context="professional" type="button" aria-pressed="true">
+              💼 Working Professional
+            </button>
+          </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="onboarding-instructions">
+          <div class="onboarding-instructions-title">How it works</div>
+          <ul class="onboarding-instructions-list">
+            <li>Each scenario presents a real social situation.</li>
+            <li>Select <strong>1 to 3 actions</strong> you'd most likely take.</li>
+            <li>There are no right or wrong answers — be honest.</li>
+            <li>Use keys <strong>A – F</strong> to select, <strong>Enter</strong> to advance.</li>
+          </ul>
+        </div>
+
+        <div class="onboarding-cta-row">
+          <button id="btn-onboarding-back" class="btn-secondary" type="button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Back
+          </button>
+          <button id="btn-confirm-onboarding" class="btn-primary" type="button">
+            Start Assessment
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SCREEN 3: QUESTION WIZARD -->
     <section id="screen-wizard" class="view-screen">
       <div class="wizard-header">
         <div class="progress-bar-track">
@@ -169,7 +258,7 @@
         </div>
         <div class="wizard-meta-row">
           <div class="step-indicator">
-            Scenario <strong id="wizard-step-label">1</strong> of 18
+            Scenario <strong id="wizard-step-label">1</strong> of <span id="wizard-total-label">18</span>
           </div>
           <div id="selection-counter-badge" class="selection-counter-badge">
             Select 1 to 3 actions &bull; <span id="selection-count-num">0</span> of 3 selected

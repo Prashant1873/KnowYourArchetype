@@ -10,12 +10,15 @@
   let questions = [];
   let centroids = {};
   let currentIndex = 0;
-  let userAnswers = {}; // { 'Q01': 'A', ... }
+  let userAnswers = {}; // { 'Q01': ['A', 'C'], ... }
   let lastResult = null;
+  let selectedLength = 'medium'; // 'short' | 'medium' | 'long'
+  let userContext = 'professional'; // 'student' | 'professional'
 
   // DOM Elements
   const screens = {
     welcome: document.getElementById('screen-welcome'),
+    onboarding: document.getElementById('screen-onboarding'),
     wizard: document.getElementById('screen-wizard'),
     loader: document.getElementById('screen-loader'),
     results: document.getElementById('screen-results')
@@ -107,26 +110,56 @@
   };
 
   /**
-   * Initializes questions array by flattening categories.
+   * Initializes full questions array (all 18) from QUESTIONNAIRE_DATA.
    */
   function initData() {
     if (!window.QUESTIONNAIRE_DATA || !window.CENTROIDS_DATA) {
       console.error('Questionnaire or Centroids data not loaded.');
       return;
     }
-
     centroids = window.CENTROIDS_DATA.centroids;
+  }
+
+  /**
+   * Builds the active questions[] based on selectedLength and userContext.
+   * - Student: swaps Cat2 from STUDENT_CAT2_DATA.
+   * - Length: slices 2/4/6 questions per category.
+   */
+  function buildQuestionSet() {
+    if (!window.QUESTIONNAIRE_DATA || !window.CENTROIDS_DATA) return;
+
+    const sliceMap = { short: 2, medium: 4, long: 6 };
+    const n = sliceMap[selectedLength] || 4;
+
+    const allCats = window.QUESTIONNAIRE_DATA.categories;
     questions = [];
 
-    window.QUESTIONNAIRE_DATA.categories.forEach(cat => {
-      cat.questions.forEach(q => {
+    allCats.forEach(cat => {
+      let qs = cat.questions;
+
+      // Swap Cat2 for students
+      if (cat.category === 'group_outings_and_dynamics' &&
+          userContext === 'student' &&
+          window.STUDENT_CAT2_DATA) {
+        qs = window.STUDENT_CAT2_DATA.questions;
+      }
+
+      const catTitle = (cat.category === 'group_outings_and_dynamics' && userContext === 'student' && window.STUDENT_CAT2_DATA)
+        ? window.STUDENT_CAT2_DATA.category_title
+        : cat.category_title;
+
+      qs.slice(0, n).forEach(q => {
         questions.push({
           ...q,
-          category_title: cat.category_title,
+          category_title: catTitle,
           category_key: cat.category
         });
       });
     });
+
+    // Update wizard step total label
+    const totalLabel = document.getElementById('wizard-total-label');
+    if (totalLabel) totalLabel.textContent = questions.length;
   }
 
   /**
@@ -163,7 +196,7 @@
 
     // Category title & scenario
     if (domainPill) domainPill.textContent = q.category_title || 'Interpersonal Scenario';
-    if (scenarioLabel) scenarioLabel.textContent = `Scenario ${q.id} &bull; ${q.category_title}`;
+    if (scenarioLabel) scenarioLabel.textContent = `Scenario ${q.id} • ${q.category_title}`;
     scenarioText.textContent = q.scenario;
 
     // Render Options
@@ -639,14 +672,10 @@
       const emailInput = document.getElementById('start-input-email');
       const nameVal = nameInput ? nameInput.value.trim() : '';
       const emailVal = emailInput ? emailInput.value.trim() : '';
-
       participantName = nameVal || 'Anonymous';
       participantEmail = emailVal || '';
 
-      currentIndex = 0;
-      userAnswers = {};
-      showScreen('wizard');
-      renderCurrentQuestion();
+      showScreen('onboarding');
     });
 
     btnBack.addEventListener('click', () => {
@@ -666,7 +695,7 @@
       participantName = 'Anonymous';
       participantEmail = '';
       currentSessionId = 'sess_' + Date.now() + '_' + Math.random().toString(36).substr(2, 7);
-      
+
       const nameInput = document.getElementById('start-input-name');
       const emailInput = document.getElementById('start-input-email');
       if (nameInput) nameInput.value = '';
@@ -681,8 +710,8 @@
       if (valDisp) valDisp.textContent = '8';
       if (statDisp) statDisp.textContent = ACCURACY_LABELS[8];
       if (savedMsg) savedMsg.textContent = '';
-      
-      showScreen('welcome');
+
+      showScreen('onboarding');
     });
 
     // Accuracy Slider Listeners
@@ -716,6 +745,51 @@
   }
 
   /**
+   * Initializes the onboarding screen selectors (length + context toggles).
+   */
+  function initOnboarding() {
+    // Length buttons
+    document.querySelectorAll('.length-option').forEach(btn => {
+      btn.addEventListener('click', () => {
+        selectedLength = btn.dataset.length;
+        document.querySelectorAll('.length-option').forEach(b => {
+          b.classList.toggle('selected', b === btn);
+          b.setAttribute('aria-pressed', String(b === btn));
+        });
+      });
+    });
+
+    // Context buttons
+    document.querySelectorAll('.context-option').forEach(btn => {
+      btn.addEventListener('click', () => {
+        userContext = btn.dataset.context;
+        document.querySelectorAll('.context-option').forEach(b => {
+          b.classList.toggle('selected', b === btn);
+          b.setAttribute('aria-pressed', String(b === btn));
+        });
+      });
+    });
+
+    // Confirm / Start Assessment
+    const btnConfirm = document.getElementById('btn-confirm-onboarding');
+    if (btnConfirm) {
+      btnConfirm.addEventListener('click', () => {
+        currentIndex = 0;
+        userAnswers = {};
+        buildQuestionSet();
+        showScreen('wizard');
+        renderCurrentQuestion();
+      });
+    }
+
+    // Back to welcome
+    const btnOnboardingBack = document.getElementById('btn-onboarding-back');
+    if (btnOnboardingBack) {
+      btnOnboardingBack.addEventListener('click', () => showScreen('welcome'));
+    }
+  }
+
+  /**
    * Dark / Light Theme Controller
    */
   function initTheme() {
@@ -744,6 +818,7 @@
 
     initTheme();
     initData();
+    initOnboarding();
     initEvents();
   });
 

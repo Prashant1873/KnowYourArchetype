@@ -1,4 +1,85 @@
 /** Auto-generated questionnaire data for zero-CORS browser execution **/
+
+/** Student Context: Campus Life alternates for Category 2 (Q07–Q12) **/
+window.STUDENT_CAT2_DATA = {
+  "category": "group_outings_and_dynamics",
+  "category_title": "Campus Life & Everyday Group Dynamics",
+  "questions": [
+    {
+      "id": "Q07",
+      "scenario": "Two friends in your group project start arguing loudly over who should do which part of the work.",
+      "options": [
+        { "letter": "A", "text": "You validate both sides and suggest splitting tasks based on each person's strengths.", "archetype": "dolphin", "trait_impact": { "energy_presence": 0.4, "warmth_vs_authority": 0.9, "conflict_assertiveness": -0.6, "conflict_cooperativeness": 0.9 } },
+        { "letter": "B", "text": "You crack a joke about group projects and then quickly propose a division that works.", "archetype": "fox", "trait_impact": { "energy_presence": 0.5, "warmth_vs_authority": 0.2, "conflict_assertiveness": 0.3, "conflict_cooperativeness": -0.2 } },
+        { "letter": "C", "text": "You step in firmly, assign tasks to everyone, and tell them to sort it out on the doc.", "archetype": "lion", "trait_impact": { "energy_presence": -0.7, "warmth_vs_authority": -0.8, "conflict_assertiveness": 0.9, "conflict_cooperativeness": -0.5 } },
+        { "letter": "D", "text": "You pull out the rubric, map out the workload fairly, and share a breakdown spreadsheet.", "archetype": "owl", "trait_impact": { "energy_presence": -0.7, "warmth_vs_authority": -0.6, "conflict_assertiveness": 0.2, "conflict_cooperativeness": 0.3 } },
+        { "letter": "E", "text": "You energize the group with a 'we got this!' speech and redirect everyone's focus.", "archetype": "peacock", "trait_impact": { "energy_presence": 0.8, "warmth_vs_authority": 0.6, "conflict_assertiveness": 0.3, "conflict_cooperativeness": 0.5 } },
+        { "letter": "F", "text": "You stay quiet until things calm down, then steadily help everyone find middle ground.", "archetype": "bear_wolf", "trait_impact": { "energy_presence": -0.8, "warmth_vs_authority": 0.2, "conflict_assertiveness": 0.0, "conflict_cooperativeness": 0.8 } }
+      ]
+    },
+    {
+      "id": "Q08",
+      "scenario": "The person running your group study session sends totally confusing messages right before it starts.",
+      "options": [
+        { "letter": "A", "text": "You check in to see if they're stressed and offer to help coordinate the session.", "archetype": "dolphin", "trait_impact": { "energy_presence": 0.4, "warmth_vs_authority": 0.8, "conflict_assertiveness": -0.5, "conflict_cooperativeness": 0.8 } },
+        { "letter": "B", "text": "You quickly figure out the important parts and summarize what the group actually needs to do.", "archetype": "fox", "trait_impact": { "energy_presence": 0.5, "warmth_vs_authority": 0.2, "conflict_assertiveness": 0.3, "conflict_cooperativeness": -0.3 } },
+        { "letter": "C", "text": "You step in and set a clear agenda: 'We cover chapters 4–6, then practice MCQs.'", "archetype": "lion", "trait_impact": { "energy_presence": -0.7, "warmth_vs_authority": -0.8, "conflict_assertiveness": 0.9, "conflict_cooperativeness": -0.4 } },
+        { "letter": "D", "text": "You map out a topic-by-topic study plan and share it in the group chat.", "archetype": "owl", "trait_impact": { "energy_presence": -0.7, "warmth_vs_authority": -0.6, "conflict_assertiveness": 0.2, "conflict_cooperativeness": 0.3 } },
+        { "letter": "E", "text": "You tell everyone to relax, bring snacks, and make the session feel more like a hangout.", "archetype": "peacock", "trait_impact": { "energy_presence": 0.8, "warmth_vs_authority": 0.6, "conflict_assertiveness": 0.3, "conflict_cooperativeness": 0.5 } },
+        { "letter": "F", "text": "You show up prepared with your own notes and keep the group grounded and focused.", "archetype": "bear_wolf", "trait_impact": { "energy_presence": -0.7, "warmth_vs_authority": 0.3, "conflict_assertiveness": 0.0, "conflict_cooperativeness": 0.8 } }
+      ]
+    },
+    {
+      "id": "Q09",
+      "scenario": "You're presenting your idea during a group discussion and a classmate keeps interrupting to talk over you.",
+      "options": [
+        { "letter": "A", "text": "You let them finish, smile, and smoothly continue from where you left off.", "archetype": "dolphin", "trait_impact": { "energy_presence": 0.4, "warmth_vs_authority": 0.8, "conflict_assertiveness": -0.6, "conflict_cooperativeness": 0.8 } },
+        { "letter": "B", "text": "You pause with a raised eyebrow and say: 'Great point — after I finish mine.'", "archetype": "fox", "trait_impact": { "energy_presence": 0.6, "warmth_vs_authority": 0.2, "conflict_assertiveness": 0.4, "conflict_cooperativeness": -0.3 } },
+        { "letter": "C", "text": "You hold steady eye contact, stop talking, and reclaim your turn without apology.", "archetype": "lion", "trait_impact": { "energy_presence": -0.7, "warmth_vs_authority": -0.8, "conflict_assertiveness": 0.9, "conflict_cooperativeness": -0.5 } },
+        { "letter": "D", "text": "You wait calmly and pick up exactly where you left off once they're done.", "archetype": "owl", "trait_impact": { "energy_presence": -0.7, "warmth_vs_authority": -0.6, "conflict_assertiveness": 0.1, "conflict_cooperativeness": 0.2 } },
+        { "letter": "E", "text": "You match the energy, loop in their comment, and turn the whole thing into a bigger conversation.", "archetype": "peacock", "trait_impact": { "energy_presence": 0.9, "warmth_vs_authority": 0.6, "conflict_assertiveness": 0.4, "conflict_cooperativeness": 0.5 } },
+        { "letter": "F", "text": "You stay completely unbothered and calmly finish your thought when the room quiets.", "archetype": "bear_wolf", "trait_impact": { "energy_presence": -0.8, "warmth_vs_authority": 0.2, "conflict_assertiveness": 0.0, "conflict_cooperativeness": 0.8 } }
+      ]
+    },
+    {
+      "id": "Q10",
+      "scenario": "A groupmate who promised to bring printed notes or their laptop to a shared study session completely forgets.",
+      "options": [
+        { "letter": "A", "text": "You laugh it off and offer to share your screen or notes without making them feel bad.", "archetype": "dolphin", "trait_impact": { "energy_presence": 0.4, "warmth_vs_authority": 0.9, "conflict_assertiveness": -0.6, "conflict_cooperativeness": 0.9 } },
+        { "letter": "B", "text": "You quickly figure out a workaround and turn it into a low-key group collaboration.", "archetype": "fox", "trait_impact": { "energy_presence": 0.5, "warmth_vs_authority": 0.2, "conflict_assertiveness": 0.3, "conflict_cooperativeness": -0.2 } },
+        { "letter": "C", "text": "You send someone to the library to print them while you start the session anyway.", "archetype": "lion", "trait_impact": { "energy_presence": -0.7, "warmth_vs_authority": -0.8, "conflict_assertiveness": 0.9, "conflict_cooperativeness": -0.4 } },
+        { "letter": "D", "text": "You quickly check what digital resources you have and build a backup plan on the spot.", "archetype": "owl", "trait_impact": { "energy_presence": -0.7, "warmth_vs_authority": -0.6, "conflict_assertiveness": 0.2, "conflict_cooperativeness": 0.3 } },
+        { "letter": "E", "text": "You tell everyone it's not a big deal and find a fun way to study together anyway.", "archetype": "peacock", "trait_impact": { "energy_presence": 0.8, "warmth_vs_authority": 0.6, "conflict_assertiveness": 0.4, "conflict_cooperativeness": 0.5 } },
+        { "letter": "F", "text": "You calmly share your own materials, telling them not to stress about it.", "archetype": "bear_wolf", "trait_impact": { "energy_presence": -0.8, "warmth_vs_authority": 0.2, "conflict_assertiveness": 0.0, "conflict_cooperativeness": 0.8 } }
+      ]
+    },
+    {
+      "id": "Q11",
+      "scenario": "At a campus hangout, someone makes a snarky dig about your major or what you're studying.",
+      "options": [
+        { "letter": "A", "text": "You laugh it off warmly and say: 'Everyone picks what they love, right?'", "archetype": "dolphin", "trait_impact": { "energy_presence": 0.4, "warmth_vs_authority": 0.8, "conflict_assertiveness": -0.5, "conflict_cooperativeness": 0.8 } },
+        { "letter": "B", "text": "You hit back with a sharp, clever one-liner that makes the whole group laugh.", "archetype": "fox", "trait_impact": { "energy_presence": 0.6, "warmth_vs_authority": 0.1, "conflict_assertiveness": 0.4, "conflict_cooperativeness": -0.3 } },
+        { "letter": "C", "text": "You look them dead in the eye and say: 'Cool. I like what I do.'", "archetype": "lion", "trait_impact": { "energy_presence": -0.7, "warmth_vs_authority": -0.8, "conflict_assertiveness": 0.8, "conflict_cooperativeness": -0.4 } },
+        { "letter": "D", "text": "You explain your actual reasons for choosing it, calmly and without ego.", "archetype": "owl", "trait_impact": { "energy_presence": -0.7, "warmth_vs_authority": -0.6, "conflict_assertiveness": 0.2, "conflict_cooperativeness": 0.2 } },
+        { "letter": "E", "text": "You dramatically pitch why your field is amazing and turn the whole thing into a conversation.", "archetype": "peacock", "trait_impact": { "energy_presence": 0.8, "warmth_vs_authority": 0.6, "conflict_assertiveness": 0.4, "conflict_cooperativeness": 0.5 } },
+        { "letter": "F", "text": "You smile calmly without taking the bait and give them nothing to feed on.", "archetype": "bear_wolf", "trait_impact": { "energy_presence": -0.8, "warmth_vs_authority": 0.2, "conflict_assertiveness": 0.0, "conflict_cooperativeness": 0.7 } }
+      ]
+    },
+    {
+      "id": "Q12",
+      "scenario": "Your friend group wants to throw a surprise farewell hangout for a classmate who's leaving, and needs people to step up.",
+      "options": [
+        { "letter": "A", "text": "You personally message everyone to make sure they can come and nobody feels left out.", "archetype": "dolphin", "trait_impact": { "energy_presence": 0.4, "warmth_vs_authority": 0.8, "conflict_assertiveness": -0.5, "conflict_cooperativeness": 0.8 } },
+        { "letter": "B", "text": "You cook up the clever surprise plan — fake study session, then boom, everyone's there.", "archetype": "fox", "trait_impact": { "energy_presence": 0.5, "warmth_vs_authority": 0.2, "conflict_assertiveness": 0.3, "conflict_cooperativeness": -0.2 } },
+        { "letter": "C", "text": "You take charge, assign roles to people in the group chat, and set a deadline.", "archetype": "lion", "trait_impact": { "energy_presence": -0.7, "warmth_vs_authority": -0.8, "conflict_assertiveness": 0.9, "conflict_cooperativeness": -0.4 } },
+        { "letter": "D", "text": "You sort the logistics: venue, time, budget, and a shared doc so nothing gets missed.", "archetype": "owl", "trait_impact": { "energy_presence": -0.7, "warmth_vs_authority": -0.6, "conflict_assertiveness": 0.2, "conflict_cooperativeness": 0.3 } },
+        { "letter": "E", "text": "You take on the music, decorations, and the emotional farewell speech to make it unforgettable.", "archetype": "peacock", "trait_impact": { "energy_presence": 0.9, "warmth_vs_authority": 0.7, "conflict_assertiveness": 0.4, "conflict_cooperativeness": 0.5 } },
+        { "letter": "F", "text": "You quietly handle setup, food, and cleanup so the organizer can focus on the vibe.", "archetype": "bear_wolf", "trait_impact": { "energy_presence": -0.8, "warmth_vs_authority": 0.3, "conflict_assertiveness": 0.0, "conflict_cooperativeness": 0.8 } }
+      ]
+    }
+  ]
+};
+
 window.QUESTIONNAIRE_DATA = {
   "title": "Know Your Archetype (18 Scenarios)",
   "total_questions": 18,
