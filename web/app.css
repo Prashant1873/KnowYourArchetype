@@ -321,125 +321,151 @@ body {
 }
 
 /* ==========================================================================
-   6 ARCHETYPES INTERACTIVE SHOWCASE SPECTRUM
+   6 ARCHETYPES INTERACTIVE SHOWCASE SPECTRUM (Anti-Slop Luxury Craft)
    ========================================================================== */
 .archetypes-showcase-section {
   width: 100%;
-  max-width: 960px;
-  margin: 28px auto 38px;
+  max-width: 1040px;
+  margin: 32px auto 40px;
 }
 
 .archetypes-spectrum-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
 }
 
 .archetype-preview-card {
   position: relative;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 18px 20px;
+  border-radius: var(--radius-lg);
+  padding: 24px 22px;
   text-align: left;
-  transition: transform 0.4s var(--spring-ease), box-shadow 0.4s var(--spring-ease), border-color 0.3s ease;
+  transition: transform 0.4s var(--spring-ease), box-shadow 0.4s var(--spring-ease), border-color 0.3s ease, background 0.3s ease;
   animation: archFloat 6s ease-in-out infinite alternate;
   animation-delay: var(--float-delay, 0s);
   cursor: default;
   overflow: hidden;
   will-change: transform, box-shadow;
+  
+  /* Light mode baseline */
+  background: radial-gradient(circle at 90% 10%, rgba(var(--arch-rgb), 0.09) 0%, transparent 65%), #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 28px -6px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.02), inset 0 1px 0 0 #ffffff;
 }
 
-.archetype-preview-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--arch-color);
-  opacity: 0.7;
-  transition: opacity 0.3s ease, height 0.3s ease;
+/* Dark mode baseline */
+[data-theme="dark"] .archetype-preview-card {
+  background: radial-gradient(circle at 90% 10%, rgba(var(--arch-rgb), 0.16) 0%, transparent 60%), rgba(17, 24, 39, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 36px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
 }
 
+/* Hover States with Rich Volumetric Glows */
 .archetype-preview-card:hover {
   transform: translateY(-8px) scale(1.02);
-  border-color: var(--arch-color);
-  box-shadow: 0 16px 36px -8px var(--arch-glow), 0 0 0 1px var(--arch-color);
   animation-play-state: paused;
   z-index: 2;
 }
 
-.archetype-preview-card:hover::before {
-  opacity: 1;
-  height: 4px;
+:root .archetype-preview-card:hover,
+[data-theme="light"] .archetype-preview-card:hover {
+  background: radial-gradient(circle at 90% 10%, rgba(var(--arch-rgb), 0.18) 0%, transparent 70%), #ffffff;
+  border-color: rgba(var(--arch-rgb), 0.45);
+  box-shadow: 0 22px 48px -12px rgba(var(--arch-rgb), 0.32), 0 0 0 1px rgba(var(--arch-rgb), 0.25), inset 0 1px 0 0 #ffffff;
+}
+
+[data-theme="dark"] .archetype-preview-card:hover {
+  background: radial-gradient(circle at 90% 10%, rgba(var(--arch-rgb), 0.26) 0%, transparent 65%), rgba(22, 30, 48, 0.88);
+  border-color: rgba(var(--arch-rgb), 0.55);
+  box-shadow: 0 26px 56px -12px rgba(var(--arch-rgb), 0.45), 0 0 0 1px rgba(var(--arch-rgb), 0.4), inset 0 1px 1px 0 rgba(255, 255, 255, 0.18);
 }
 
 .arch-card-top {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 12px;
+  gap: 16px;
+  margin-bottom: 14px;
 }
 
-.arch-avatar-ring {
-  width: 44px;
-  height: 44px;
+/* Prismatic Floating Lens */
+.arch-emblem-lens {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
-  border-radius: 50%;
-  background: radial-gradient(circle, var(--arch-glow) 0%, transparent 70%);
-  border: 1.5px solid var(--arch-color);
-  transition: transform 0.4s var(--spring-ease), box-shadow 0.4s var(--spring-ease);
+  font-size: 1.7rem;
+  background: linear-gradient(135deg, rgba(var(--arch-rgb), 0.15) 0%, rgba(var(--arch-rgb), 0.04) 100%);
+  border: 1px solid rgba(var(--arch-rgb), 0.28);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.25), 0 8px 18px -4px rgba(var(--arch-rgb), 0.22);
+  transition: transform 0.4s var(--spring-ease), box-shadow 0.4s var(--spring-ease), border-color 0.3s ease;
   flex-shrink: 0;
 }
 
-.archetype-preview-card:hover .arch-avatar-ring {
-  transform: scale(1.18) rotate(8deg);
-  box-shadow: 0 0 18px var(--arch-glow);
+.archetype-preview-card:hover .arch-emblem-lens {
+  transform: scale(1.12) rotate(6deg);
+  border-color: rgba(var(--arch-rgb), 0.7);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.4), 0 12px 28px -4px rgba(var(--arch-rgb), 0.48);
 }
 
 .arch-card-title-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 3px;
+  gap: 4px;
 }
 
 .arch-card-name {
   font-family: var(--font-headline);
-  font-size: 1.15rem;
+  font-size: 1.28rem;
   font-weight: 700;
   color: var(--text-primary);
-  line-height: 1.2;
+  line-height: 1.15;
   margin: 0;
-  transition: color 0.2s ease;
+  letter-spacing: -0.01em;
+  transition: color 0.25s ease;
 }
 
 .archetype-preview-card:hover .arch-card-name {
   color: var(--arch-color);
 }
 
-.arch-role-pill {
+/* Editorial Metadata with Luminous Jewel Dot (No AI Pill!) */
+.arch-role-label {
   font-family: var(--font-body);
-  font-size: 0.72rem;
+  font-size: 0.73rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--arch-color);
-  background: color-mix(in srgb, var(--arch-color) 12%, transparent);
-  padding: 2px 8px;
-  border-radius: var(--radius-full);
-  display: inline-block;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: color 0.25s ease;
+}
+
+.arch-role-label::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--arch-color);
+  box-shadow: 0 0 8px var(--arch-color);
+  flex-shrink: 0;
+}
+
+.archetype-preview-card:hover .arch-role-label {
+  color: var(--text-secondary);
 }
 
 .arch-card-trait {
   font-family: var(--font-body);
-  font-size: 0.88rem;
+  font-size: 0.90rem;
   color: var(--text-secondary);
-  line-height: 1.55;
+  line-height: 1.62;
   margin: 0;
   text-align: left;
 }
